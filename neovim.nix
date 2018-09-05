@@ -18,7 +18,7 @@ let
     };
   };
 
-  customizations = pkgs.callPackage ./customizations.nix {};
+  customizations = pkgs.callPackage ./customization.nix {};
 
   config = {
     packages.myVimPackages = customizations.plugins;

@@ -19,6 +19,7 @@ set ruler
 set wildmenu
 
 set backup
+silent !mkdir ~/.backup > /dev/null 2>&1
 set backupdir=~/.backup/
 
 set undofile
@@ -93,3 +94,7 @@ endfunction
 autocmd CursorHold *.* checktime
 
 let g:elm_format_autosave = 0
+
+" Vim swap
+silent !mkdir ~/.vim/swap > /dev/null 2>&1
+set directory=~/.vim/swap

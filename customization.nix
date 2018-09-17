@@ -39,6 +39,7 @@ in
       myPlugins.tcomment_vim
       myPlugins.unimpaired
       myPlugins.ghcid
+      hoogle
     ];
     opt = [
       neco-ghc
@@ -49,5 +50,10 @@ in
     ${generic}
 
     ${mappings}
+
+    " Triage vim-hoogle
+    if(executable('hoogle'))
+      autocmd BufEnter *.hs :setlocal keywordprg=:Hoogle
+    endif
   '';
 }

@@ -39,6 +39,7 @@ in
       myPlugins.tcomment_vim
       myPlugins.unimpaired
       myPlugins.ghcid
+      myPlugins.todotxt
       hoogle
     ];
     opt = [

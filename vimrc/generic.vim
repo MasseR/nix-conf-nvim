@@ -32,11 +32,11 @@ set smartcase
 
 set autoread
 
-let g:ctrlp_root_markers = ['pom.xml', '.projectile', '.git', '*.cabal']
+let g:ctrlp_root_markers = ['pom.xml', '.projectile', '.git', '*.cabal', 'package.yaml']
 " Git ignore
 set wildignore+=*/.git/*,*.orig,*_LOCAL_*,*_REMOTE_*,*_BACKUP_*,*_BASE_*
 " Haskell ignore
-set wildignore+=*.hi,*.o,
+set wildignore+=*.hi,*.o,*/dist/*,*_o
 " Java ignore
 set wildignore+=*/target/*,*.class
 " Node

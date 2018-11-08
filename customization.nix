@@ -28,6 +28,7 @@ in
       signature
       vim-orgmode
       vim-easy-align
+      vim-stylish-haskell
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree

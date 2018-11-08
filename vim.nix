@@ -10,14 +10,19 @@ let
     endif
   '';
 
+  vimPkg = pkgs.vim_configurable.customize {
+    name = "vim";
+    vimrcConfig.customRC = ''
+      ${customizations.customRC}
+
+      ${gvimRC}
+      '';
+    vimrcConfig.packages.myVimPackage = customizations.plugins;
+  };
+
 in
 
-pkgs.vim_configurable.customize {
-  name = "vim";
-  vimrcConfig.customRC = ''
-    ${customizations.customRC}
-
-    ${gvimRC}
-    '';
-  vimrcConfig.packages.myVimPackage = customizations.plugins;
+pkgs.buildEnv {
+  name = "vim-env";
+  paths = [pkgs.haskellPackages.stylish-haskell vimPkg];
 }

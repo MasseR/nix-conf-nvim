@@ -30,5 +30,4 @@ in
 pkgs.neovim.override {
   vimAlias = false;
   configure = config;
-  extraPython3Packages = [ tasklib ];
 }

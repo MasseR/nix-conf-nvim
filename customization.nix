@@ -39,9 +39,6 @@ in
       myPlugins.ctrlp-obsession
       myPlugins.tcomment_vim
       myPlugins.unimpaired
-      myPlugins.ghcid
-      myPlugins.todotxt
-      hoogle
     ];
     opt = [
       neco-ghc

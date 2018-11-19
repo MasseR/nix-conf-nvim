@@ -9,4 +9,4 @@ before_script:
   - mkdir -p ~/.config/nixpkgs
 
 script:
-  nix-env -f . -i neovim
+  nix build -f . vim neovim

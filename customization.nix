@@ -28,7 +28,7 @@ in
       signature
       vim-orgmode
       vim-easy-align
-      vim-stylish-haskell
+      vim-speeddating
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree
@@ -43,6 +43,7 @@ in
     opt = [
       neco-ghc
       ghc-mod-vim
+      vim-stylish-haskell
     ];
   };
   customRC = ''
@@ -54,5 +55,11 @@ in
     if(executable('hoogle'))
       autocmd BufEnter *.hs :setlocal keywordprg=:Hoogle
     endif
+    " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
+    autocmd BufEnter *.hs :setlocal formatprg=stylish-haskell
+
+    let g:vimwiki_folding='expr'
+
+    noremap <leader>aa :vimgrep /:W<C-r>=strftime("%V")<cr>/ ~/wikidata/**/*<cr>
   '';
 }

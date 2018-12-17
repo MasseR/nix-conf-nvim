@@ -38,8 +38,8 @@ in {
     src = pkgs.fetchFromGitHub {
       owner = "itchyny";
       repo = "vim-haskell-indent";
-      rev = "d14283c6d5712a24e700f0dcbc116c44f8644780";
-      sha256 = "0xprpxrykxpb0kqvi0wgan83sr3xpwha94shp05gvxd8lkbm7l6j";
+      rev = "32113104e9b548e9015f296dbe5b3803652ae1fc";
+      sha256 = "0x9j3lf61fsfxl94zhpff4x01nxbpm1k7mnk6ml085s35jzgv94q";
     };
     dependencies = [];
   };
@@ -93,8 +93,8 @@ in {
     src = pkgs.fetchFromGitHub {
       owner = "jamessan";
       repo = "vim-gnupg";
-      rev = "fa3a63039d1f96abeff07eaf28e1ad4697754e3c";
-      sha256 = "01nfjgsk49fn6k3z3x0fkywpms27r49q1asr2l910wmdm5g2v07f";
+      rev = "08c4f516e8a5dbfa187188d24ccd425c14d97011";
+      sha256 = "1jlb86k8zc7ijq2q1yxbhmc3dpnldp9rfib64iqs7h65fa8pp5vh";
     };
     dependencies = [];
   };

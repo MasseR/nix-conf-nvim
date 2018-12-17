@@ -1,4 +1,4 @@
-{pkgs ? import <nixpkgs> {}, ...}:
+{pkgs, python3, vim_configurable, ...}:
 
 let
   customizations = pkgs.callPackage ./customization.nix {};
@@ -10,15 +10,15 @@ let
     endif
   '';
 
-  vimPkg = pkgs.vim_configurable.customize {
+  vimPkg = ((vim_configurable.override { python = python3; }).customize {
     name = "vim";
     vimrcConfig.customRC = ''
       ${customizations.customRC}
 
       ${gvimRC}
-      '';
+    '';
     vimrcConfig.packages.myVimPackage = customizations.plugins;
-  };
+  });
 
 in
 

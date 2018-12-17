@@ -57,6 +57,8 @@ in
     endif
     " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
     autocmd BufEnter *.hs :setlocal formatprg=stylish-haskell
+    " Try out getting used to folding again
+    autocmd BufEnter *.hs :setlocal foldmethod=indent
 
     let g:vimwiki_folding='expr'
 

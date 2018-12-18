@@ -94,7 +94,7 @@ in {
       owner = "jamessan";
       repo = "vim-gnupg";
       rev = "08c4f516e8a5dbfa187188d24ccd425c14d97011";
-      sha256 = "1jlb86k8zc7ijq2q1yxbhmc3dpnldp9rfib64iqs7h65fa8pp5vh";
+      sha256 = "11m72nrjl0zf0i8ywpq1r4058lzlvgjydy6fvyxw5zfrd7mk4pdf";
     };
     dependencies = [];
   };

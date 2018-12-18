@@ -48,3 +48,7 @@ noremap <Leader>ss :CtrlPObsession<cr>
 " Misc
 noremap <leader>ut :GundoToggle<cr>
 noremap <F2> :GundoToggle<cr>
+
+" Fold helper
+" Close all except current line
+noremap <leader>z zMzv

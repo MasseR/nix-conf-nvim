@@ -29,6 +29,7 @@ in
       vim-orgmode
       vim-easy-align
       vim-speeddating
+      dhall-vim
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree

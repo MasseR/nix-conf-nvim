@@ -1,4 +1,4 @@
-{pkgs, python3, vim_configurable, ...}:
+{pkgs, vim_configurable, ...}:
 
 let
   customizations = pkgs.callPackage ./customization.nix {};
@@ -10,7 +10,7 @@ let
     endif
   '';
 
-  vimPkg = ((vim_configurable.override { python = python3; }).customize {
+  vimPkg = ((vim_configurable.override {}).customize {
     name = "vim";
     vimrcConfig.customRC = ''
       ${customizations.customRC}

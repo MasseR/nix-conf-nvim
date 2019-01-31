@@ -29,6 +29,8 @@ in
       vim-orgmode
       vim-easy-align
       vim-speeddating
+      ultisnips
+      vim-snippets
       dhall-vim
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
@@ -52,10 +54,6 @@ in
 
     ${mappings}
 
-    " Triage vim-hoogle
-    if(executable('hoogle'))
-      autocmd BufEnter *.hs :setlocal keywordprg=:Hoogle
-    endif
     " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
     autocmd BufEnter *.hs :setlocal formatprg=stylish-haskell
     " Try out getting used to folding again

@@ -1,6 +1,9 @@
 let mapleader = " "
 let maplocalleader = " "
 
+" Generic
+noremap <leader>w :w<cr>
+
 " Align config
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign>

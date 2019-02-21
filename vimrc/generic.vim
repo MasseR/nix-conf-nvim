@@ -64,7 +64,7 @@ endif
 " Statusline always
 set laststatus=2
 
-let g:vimwiki_list = [{'path': '~/wikidata/', 'path_html': '~/public_html/', 'ext': '.md', 'syntax': 'markdown'}]
+let g:vimwiki_list = [ {'path': '~/wikidata/', 'path_html': '~/public_html/', 'ext': '.md', 'syntax': 'markdown'} , {'path': '~/personal_wiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_dir_link = 'index'
 
 if has('nvim')

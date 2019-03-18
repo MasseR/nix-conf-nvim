@@ -32,6 +32,7 @@ in
       ultisnips
       vim-snippets
       dhall-vim
+      easy-align
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree

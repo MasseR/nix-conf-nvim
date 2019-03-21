@@ -1,16 +1,16 @@
 language: nix
 
-os:
-  - linux
-  - osx
-
 before_script:
   - mkdir -m 0755 -p /nix/var/nix/{profiles,gcroots}/per-user/$USER
   - mkdir -p ~/.config/nixpkgs
 
 matrix:
   include:
-  - env:
+  - os: osx
+    env:
+    - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-18.09.tar.gz
+  - os: linux
+    env:
     - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-18.09.tar.gz
 
 script:

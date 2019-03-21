@@ -15,4 +15,7 @@ env:
 
 
 script:
-  nix build -I nixpkgs=$NIXPKGS -f . vim neovim
+  # https://github.com/NixOS/nixpkgs/commit/ab22e8cc9c8f667c09f54f82fcb88f9732c54dfc
+  # neovim is executed automatically, but some rplugins don't necessarily play well
+  # together with nix store, trying to write stuff outside of the $src or $out
+  nix build -I nixpkgs=$NIXPKGS -f . vim

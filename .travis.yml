@@ -8,5 +8,10 @@ before_script:
   - mkdir -m 0755 -p /nix/var/nix/{profiles,gcroots}/per-user/$USER
   - mkdir -p ~/.config/nixpkgs
 
+matrix:
+  include:
+  - env:
+    - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-18.09.tar.gz
+
 script:
-  nix build -f . vim neovim
+  nix build -I nixpkgs=$NIXPKGS -f . vim neovim

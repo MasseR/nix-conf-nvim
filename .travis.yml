@@ -12,6 +12,7 @@ matrix:
   - os: linux
     env:
     - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-18.09.tar.gz
+    - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-19.03.tar.gz
 
 script:
   nix build -I nixpkgs=$NIXPKGS -f . vim neovim

@@ -63,5 +63,8 @@ in
     let g:vimwiki_folding='expr'
 
     noremap <leader>aa :vimgrep /:W<C-r>=strftime("%V")<cr>/ ~/wikidata/**/*<cr>
+
+    " Teach myself shorter lines
+    set colorcolumn=110
   '';
 }

@@ -1,4 +1,4 @@
-{config, pkgs, vim_configurable, ...}:
+{pkgs, vim_configurable, ...}:
 
 let
   customizations = pkgs.callPackage ./customization.nix {};

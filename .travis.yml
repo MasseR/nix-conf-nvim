@@ -8,12 +8,12 @@ os:
   - linux
 
 env:
-  - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-19.03.tar.gz
-  - NIXPKGS=https://github.com/NixOS/nixpkgs-channels/archive/nixos-unstable.tar.gz
+  - NIXPKGS=19.03
+  - NIXPKGS=unstable
 
 
 script:
   # https://github.com/NixOS/nixpkgs/commit/ab22e8cc9c8f667c09f54f82fcb88f9732c54dfc
   # neovim is executed automatically, but some rplugins don't necessarily play well
   # together with nix store, trying to write stuff outside of the $src or $out
-  nix build -I nixpkgs=$NIXPKGS -f . vim
+  nix build -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/nixos-$NIXPKGS.tar.gz -f . vim

@@ -66,5 +66,8 @@ in
 
     " Teach myself shorter lines
     set colorcolumn=110
+
+    set number
+    set relativenumber
   '';
 }

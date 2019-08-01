@@ -60,7 +60,7 @@ in
     " Try out getting used to folding again
     " autocmd BufEnter *.hs :setlocal foldmethod=indent
 
-    let g:vimwiki_folding='expr'
+    " let g:vimwiki_folding='expr'
 
     noremap <leader>aa :vimgrep /:W<C-r>=strftime("%V")<cr>/ ~/wikidata/**/*<cr>
 

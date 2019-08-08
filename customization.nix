@@ -43,6 +43,7 @@ in
       myPlugins.ctrlp-obsession
       myPlugins.tcomment_vim
       myPlugins.unimpaired
+      myPlugins.gutentags
     ];
     opt = [
       neco-ghc
@@ -50,7 +51,12 @@ in
       vim-stylish-haskell
     ];
   };
-  customRC = ''
+  customRC = let
+    hasktagging = pkgs.buildEnv {
+      name ="hasktagging-complete";
+      paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags ];
+    };
+  in ''
     ${generic}
 
     ${mappings}
@@ -69,5 +75,12 @@ in
 
     set number
     set relativenumber
+
+    " gutentags
+    set statusline+=%{gutentags#statusline()}
+    " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
+    let g:gutentags_project_info = [{'type': 'haskell', 'glob': '*.cabal'}]
+    " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
+    let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
   '';
 }

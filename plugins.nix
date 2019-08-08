@@ -147,4 +147,13 @@ in {
       sha256 = "08m9q5f2pz6gjp0vkmm7glfsrbnldxi1j59dm5d7any6y96xxd6v";
     };
   };
+  "gutentags" = buildvimPlugin {
+    name = "gutentags";
+    src = pkgs.fetchFromGitHub {
+      owner = "ludovicchabant";
+      repo = "vim-gutentags";
+      rev = "eecb136fae97e30d5f01e71f0d3b775c8b017385";
+      sha256 = "0i8hq0qxjrsavs3a7saz5wqibib5qd3lgfbygpclvp24ylisa8vq";
+    };
+  };
 }

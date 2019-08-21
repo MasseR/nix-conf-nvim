@@ -33,6 +33,7 @@ in
       vim-snippets
       dhall-vim
       easy-align
+      purescript-vim
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree
@@ -54,7 +55,7 @@ in
   customRC = let
     hasktagging = pkgs.buildEnv {
       name ="hasktagging-complete";
-      paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags ];
+      paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags pkgs.ctags ];
     };
   in ''
     ${generic}

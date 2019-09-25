@@ -36,7 +36,7 @@ let g:ctrlp_root_markers = ['pom.xml', '.projectile', '.git', '*.cabal', 'packag
 " Git ignore
 set wildignore+=*/.git/*,*.orig,*_LOCAL_*,*_REMOTE_*,*_BACKUP_*,*_BASE_*
 " Haskell ignore
-set wildignore+=*.hi,*.o,*/dist/*,*_o
+set wildignore+=*.hi,*.o,*/dist/*,*_o,*/dist-newstyle/*
 " Java ignore
 set wildignore+=*/target/*,*.class
 " Node

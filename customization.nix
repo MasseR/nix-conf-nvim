@@ -83,5 +83,6 @@ in
     let g:gutentags_project_info = [{'type': 'haskell', 'glob': '*.cabal'}]
     " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
     let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
+    let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
   '';
 }

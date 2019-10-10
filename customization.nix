@@ -20,7 +20,6 @@ in
       ctrlp
       Gundo
       surround
-      easy-align
       vim-markdown
       vim-nix
       fugitive # You can use this if you prepend the # symbol with a space
@@ -29,7 +28,6 @@ in
       vim-orgmode
       vim-easy-align
       vim-speeddating
-      ultisnips
       vim-snippets
       dhall-vim
       easy-align

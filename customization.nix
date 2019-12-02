@@ -64,6 +64,7 @@ in
     autocmd BufEnter *.hs :setlocal formatprg=stylish-haskell
     " Try out getting used to folding again
     " autocmd BufEnter *.hs :setlocal foldmethod=indent
+    set nofoldenable
 
     " let g:vimwiki_folding='expr'
 

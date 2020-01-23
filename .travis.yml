@@ -8,7 +8,7 @@ os:
   - linux
 
 env:
-  - NIXPKGS=19.03
+  - NIXPKGS=19.09
   - NIXPKGS=unstable
 
 

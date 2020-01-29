@@ -61,7 +61,7 @@ in
     ${mappings}
 
     " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
-    autocmd BufEnter *.hs :setlocal formatprg=stylish-haskell
+    autocmd BufEnter *.hs :noremap <buffer> <leader>ff :%!stylish-haskell<cr>
     " Try out getting used to folding again
     " autocmd BufEnter *.hs :setlocal foldmethod=indent
     set nofoldenable

@@ -47,7 +47,6 @@ in
     opt = [
       neco-ghc
       ghc-mod-vim
-      vim-stylish-haskell
     ];
   };
   customRC = let

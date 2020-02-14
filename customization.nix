@@ -22,13 +22,11 @@ in
       surround
       vim-markdown
       vim-nix
-      fugitive # You can use this if you prepend the # symbol with a space
+      fugitive
       Tagbar
       signature
       vim-orgmode
       vim-easy-align
-      vim-speeddating
-      vim-snippets
       dhall-vim
       easy-align
       purescript-vim
@@ -37,16 +35,11 @@ in
       myPlugins.nerdtree
       myPlugins.syntastic
       myPlugins.vim-gnupg
-      myPlugins.vim-obsession
-      myPlugins.vim-prosession
-      myPlugins.ctrlp-obsession
       myPlugins.tcomment_vim
       myPlugins.unimpaired
       myPlugins.gutentags
     ];
     opt = [
-      neco-ghc
-      ghc-mod-vim
     ];
   };
   customRC = let

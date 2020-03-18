@@ -63,3 +63,6 @@ if !has("gui_running")
 else
   inoremap <C-Space> <C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
 endif
+
+" Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
+autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms

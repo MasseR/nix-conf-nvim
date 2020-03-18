@@ -30,6 +30,8 @@ in
       dhall-vim
       easy-align
       purescript-vim
+      xptemplate
+      myPlugins.customtemplates
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree

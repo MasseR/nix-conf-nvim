@@ -55,3 +55,11 @@ noremap <F2> :GundoToggle<cr>
 " Fold helper
 " Close all except current line
 noremap <leader>z zMzv
+
+" Start template
+if !has("gui_running")
+  " Terminal doesn't send the correct sequence
+  inoremap <C-@> <C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
+else
+  inoremap <C-Space> <C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
+endif

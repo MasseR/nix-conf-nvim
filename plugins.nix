@@ -156,4 +156,10 @@ in {
       sha256 = "0i8hq0qxjrsavs3a7saz5wqibib5qd3lgfbygpclvp24ylisa8vq";
     };
   };
+
+  # Templates for xptemplate
+  "customtemplates" = buildvimPlugin {
+    name = "customtemplates";
+    src = ./templates;
+  };
 }

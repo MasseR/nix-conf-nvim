@@ -24,5 +24,5 @@ in
 
 pkgs.buildEnv {
   name = "vim-env";
-  paths = [pkgs.haskellPackages.stylish-haskell vimPkg];
+  paths = [vimPkg];
 }

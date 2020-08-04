@@ -3,7 +3,7 @@
 let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
 
-in {
+in rec {
   "ghcid" = buildvimPlugin {
     name = "ghcid";
     src = (fetchgit {
@@ -122,11 +122,18 @@ in {
     src = fetchgit {
       inherit (lib.importJSON ./plugins/asynctasks.json) url rev sha256 fetchSubmodules;
     };
+    dependencies = [ asyncrun ];
   };
 
   # Templates for xptemplate
   "customtemplates" = buildvimPlugin {
     name = "customtemplates";
     src = ./templates;
+  };
+
+  "async_cabal" = buildvimPlugin {
+    name = "async_cabal";
+    src = ./async_cabal;
+    dependencies = [ asyncrun ];
   };
 }

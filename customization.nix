@@ -40,6 +40,9 @@ in
       myPlugins.tcomment_vim
       myPlugins.unimpaired
       myPlugins.gutentags
+      myPlugins.asyncrun
+      myPlugins.asynctasks
+      myPlugins.async_cabal
     ];
     opt = [
     ];
@@ -75,5 +78,7 @@ in
     " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
     let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
     let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
+
+    let g:async_cabal_enable = 1
   '';
 }

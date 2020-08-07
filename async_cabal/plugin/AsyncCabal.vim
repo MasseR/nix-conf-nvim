@@ -51,8 +51,10 @@ function! CabalRun()
           \%W%>%f:%l:%c:,
           \%+C\ \ %#%tarning:\ %m,
     let l:project = fnamemodify(l:path, ":p:h") . "/" . split(g:async_cabal_project, ':')[-1]
-    execute "lcd " . l:project
-    let l:cmd = "AsyncRun -strip cabal new-build " . g:async_cabal_project
+    if !empty(finddir(l:project))
+      execute "lcd " . l:project
+    endif
+    let l:cmd = "AsyncRun -strip cabal new-build -O0 " . g:async_cabal_project
 
     " Stop if there is something running already
     AsyncStop

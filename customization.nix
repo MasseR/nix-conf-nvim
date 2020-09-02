@@ -79,6 +79,6 @@ in
     let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
     let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
 
-    let g:async_cabal_enable = 1
+    let g:async_cabal_enable = 0
   '';
 }

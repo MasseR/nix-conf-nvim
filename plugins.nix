@@ -4,6 +4,12 @@ let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
 
 in rec {
+  "vim-lsp" = buildvimPlugin {
+    name = "vim-lsp";
+    src = (fetchgit {
+      inherit (lib.importJSON ./plugins/vim-lsp.json) url rev sha256 fetchSubmodules;
+    });
+  };
   "ghcid" = buildvimPlugin {
     name = "ghcid";
     src = (fetchgit {

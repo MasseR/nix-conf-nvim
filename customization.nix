@@ -42,16 +42,18 @@ in
       myPlugins.gutentags
       myPlugins.asyncrun
       myPlugins.asynctasks
-      myPlugins.async_cabal
+      myPlugins.vim-lsp
     ];
     opt = [
     ];
   };
-  customRC = let
+  customRC =
+    let
     hasktagging = pkgs.buildEnv {
       name ="hasktagging-complete";
       paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags pkgs.ctags ];
     };
+    lsp_settings = import ./lsp_settings.nix { servers = { dhall = "dhall-lsp-server"; }; };
   in ''
     ${generic}
 
@@ -80,5 +82,7 @@ in
     let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
 
     let g:async_cabal_enable = 0
+
+    ${lsp_settings}
   '';
 }

@@ -2,6 +2,9 @@
   "url": "https://github.com/gikmx/ctrlp-obsession",
   "rev": "ca2fabd8d1f252a869a81160d4e969066babfb05",
   "date": "2017-09-24T17:37:30-05:00",
+  "path": "/nix/store/21a5yvv0f0ld8fwnswn5snc41qh773y6-ctrlp-obsession",
   "sha256": "1rwh2pvnk71gc9xf5kbkysmq2shrv4xmb1zpkwk1spb8hgsqn68a",
-  "fetchSubmodules": false
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

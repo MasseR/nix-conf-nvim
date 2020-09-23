@@ -1,7 +1,10 @@
 {
   "url": "https://github.com/tomtom/tcomment_vim",
-  "rev": "920d465b56bcf96c976fa22e9558d51aa55dcd9c",
-  "date": "2020-06-18T21:17:53+02:00",
-  "sha256": "0n7gwdyzim4f92mxnjz4zwfiyapyjhbf21b1l3dq9b07x9m40365",
-  "fetchSubmodules": false
+  "rev": "25bdb50a6c5934d4ac9313cef0d7d2168d84803b",
+  "date": "2020-08-23T19:40:00+02:00",
+  "path": "/nix/store/zxi0fgnbhgsg9nv1spnaaj8izlsb3in4-tcomment_vim",
+  "sha256": "04dmdydrc4v055qkjn5gfvibyzd30fg00abnk8ijvabfcmhvlh40",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

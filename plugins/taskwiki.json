@@ -1,7 +1,10 @@
 {
   "url": "https://github.com/tbabej/taskwiki",
-  "rev": "7a2b0d9ad100539cd97e7b8da0c49e8d070c3ab0",
-  "date": "2020-08-02T18:17:43-04:00",
-  "sha256": "1mw676kx5k7lp2lasazfcy92njifhf39zj6klnxlxkdqaj1pxkrk",
-  "fetchSubmodules": false
+  "rev": "377aac68ba55c74e981fa1b851e6c8f5784c06be",
+  "date": "2020-09-23T02:18:46-04:00",
+  "path": "/nix/store/qqrinwib9h7sz88gzz7yzwznk82sbigf-taskwiki",
+  "sha256": "156fgw3irdb9ypc0bn74n7icl1kha2dv631mp1a5f25da8kdhc6p",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

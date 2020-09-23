@@ -2,6 +2,9 @@
   "url": "https://github.com/dhruvasagar/vim-prosession",
   "rev": "95f78bd0f719fee96569f30fd5f4199c4461efb7",
   "date": "2020-04-20T08:32:06+05:30",
+  "path": "/nix/store/x00s25cyr3nmql9i62436d39n22yaxhj-vim-prosession",
   "sha256": "1ix04f3nxxmxd36kzalx0hrbks30v44ydz15apvl1h8l8663hda2",
-  "fetchSubmodules": false
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

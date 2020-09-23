@@ -1,7 +1,10 @@
 {
   "url": "https://github.com/itchyny/vim-haskell-indent",
-  "rev": "085c801230f520d9eae7a3ba02c9853acccc6311",
-  "date": "2020-05-07T16:19:25+09:00",
-  "sha256": "10i17jsnr1qaazha9ff9vvkby7h523dcdnzsn1crchhs9sg0cwx3",
-  "fetchSubmodules": false
+  "rev": "f4da5bc71ae7de9525c8c23fe44664f3e8ad79cd",
+  "date": "2020-08-16T00:07:55+09:00",
+  "path": "/nix/store/2x9h7ry89891vssa1mjv2whnk54vqaj3-vim-haskell-indent",
+  "sha256": "0x5infc2r0py28iqijx874sblbh6k9a777x6i2hy4gb6a5ixx0rq",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
 }

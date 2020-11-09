@@ -84,5 +84,7 @@ in
     let g:async_cabal_enable = 0
 
     ${lsp_settings}
+
+    abbreviate :shrug: ¯\_(ツ)_/¯
   '';
 }

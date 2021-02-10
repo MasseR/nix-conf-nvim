@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/aiya000/vim-ghcid-quickfix",
+  "rev": "186201ae90c4c98076436efaac1e35daf2c88d72",
+  "date": "2020-04-23T19:23:08+09:00",
+  "path": "/nix/store/zx6wn4hkcc21x7jrd6ya32mvp55i1hyh-vim-ghcid-quickfix",
+  "sha256": "121pym6v0ah9d73lbnqj1m5af0bixl8qpihv8mcqxzkg276rpim9",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
+}

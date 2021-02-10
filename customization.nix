@@ -43,6 +43,7 @@ in
       myPlugins.asyncrun
       myPlugins.asynctasks
       myPlugins.vim-lsp
+      myPlugins.vim-ghcid-quickfix
     ];
     opt = [
     ];

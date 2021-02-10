@@ -9,6 +9,8 @@ function prefetch() {
   nix-prefetch-git "${url}" > "${name}.json" &
 }
 
+rm *.json
+
 eval "$(dhall text < ./plugin_eval.dhall)"
 
 wait

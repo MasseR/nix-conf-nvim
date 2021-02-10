@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/skywind3000/asyncrun.vim",
-  "rev": "58d23e70569994b36208ed2a653f0a2d75c24fbc",
-  "date": "2020-04-09T11:17:48+08:00",
-  "path": "/nix/store/vpp5mc72ih6746caj2dj0awng9r6ccgx-asyncrun.vim",
-  "sha256": "02fiqf4rcrxbcgvj02mpd78wkxsrnbi54aciwh9fv5mnz5ka249m",
+  "rev": "143b677f988de19a734caa3bfd8e74f5046db280",
+  "date": "2021-02-03T13:02:34+08:00",
+  "path": "/nix/store/hhx83gy16fx1c8hdb80f8rxn3xlppq6x-asyncrun.vim",
+  "sha256": "1rshyfp0hws9724jzdlnb6yrgrvld063vdmwh4z2272pmbjpwsfk",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

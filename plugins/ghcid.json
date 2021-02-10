@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/ndmitchell/ghcid",
-  "rev": "d6191a111a1160ddecb05292eefe28ae362ccbaa",
-  "date": "2020-08-12T12:15:47+01:00",
-  "path": "/nix/store/5fy2awww7mmpyf2pqcfilpnn0kgass3v-ghcid",
-  "sha256": "17dp28a3ipbx8fwsj0h9imkrgd0nfjzpcsn1zjdbih1kfh494smf",
+  "rev": "298c69898c11c2da574a6d2c32e195b0adc6f356",
+  "date": "2021-02-06T20:20:58+00:00",
+  "path": "/nix/store/9yry86449i16r2281apsjj2a2sfxina2-ghcid",
+  "sha256": "1999c3x2bpif0ppv1i452fcklgmjdxrvj510sy7dv8aym93vpmax",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

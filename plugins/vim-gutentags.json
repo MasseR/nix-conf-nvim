@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/ludovicchabant/vim-gutentags",
-  "rev": "8e69652c7a7e7aabd96cff21b6ee6b6a295c901c",
-  "date": "2020-04-16T05:46:48+07:00",
-  "path": "/nix/store/88pqggs507jxrmrcrjcdji9spnxd74dj-vim-gutentags",
-  "sha256": "1j9548h2cqvnmqa89hha0s1wfvijdgk6ilakq60awlijdw427f04",
+  "rev": "50705e8ebb7038b31314f416d1bddd9cb9154049",
+  "date": "2020-05-22T13:53:25-07:00",
+  "path": "/nix/store/0vgwp5g7ix25b51adi93kjnrzxzfr0b3-vim-gutentags",
+  "sha256": "0vm3bp94kbc28azsmm8505hyd9v1a9isrn5dp47njmj8w17l7725",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

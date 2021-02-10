@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/sukima/xmledit",
-  "rev": "69c5cb4c5e190a1299a584f653411e66ab5d02f5",
-  "date": "2020-03-29T15:25:01-04:00",
-  "path": "/nix/store/dchv1pi3yqgfsf9f4bwag4205qcj394g-xmledit",
-  "sha256": "09zvbqhpx7jc4ag4x2hyc14p8fw0i71mxz6x93h228izivy7wlyb",
+  "rev": "6db863497f956ece4b0795fe19cb16d6c57f6543",
+  "date": "2020-12-08T17:57:55-05:00",
+  "path": "/nix/store/r54r3n22a63s589x58y95zw75zxc2mlf-xmledit",
+  "sha256": "16a612cdjk729cx3z5jgyk92b3w2z2zxaw2rx33k5x6pv6cji9cc",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

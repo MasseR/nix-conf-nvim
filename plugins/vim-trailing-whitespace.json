@@ -1,7 +1,7 @@
 {
   "url": "https://github.com/bronson/vim-trailing-whitespace",
-  "rev": "610ca1a97c8dc85cdeb38635e5a4703317c4b94d",
-  "date": "2020-06-29T10:47:53-07:00",
+  "rev": "05f068ebd9dbdf71d2d334d02abd99deb0311c40",
+  "date": "2020-11-18T11:38:32-08:00",
   "path": "/nix/store/inv7mhlg98w5ps31gpcdmq017l1zbi1f-vim-trailing-whitespace",
   "sha256": "1bh15yw2aysvpn2ndnc0s6jzc0y93x6q1blc5pph67rdix5bm7gy",
   "fetchSubmodules": false,

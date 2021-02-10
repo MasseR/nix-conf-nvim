@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/jamessan/vim-gnupg",
-  "rev": "90b86c542c40fa8bcee1fbc6ae69650f0280c695",
-  "date": "2020-09-07T19:03:23-04:00",
-  "path": "/nix/store/lv5cz3xr1i7ws80qzvjl0g3bcmf9l8zj-vim-gnupg",
-  "sha256": "15pd3vbzspski67pdis4snk20y0fygxj3czrn61rz3qj3i9d49yq",
+  "rev": "96be0be1240a848da56d665b38e1b0fe7ee3f1af",
+  "date": "2020-11-11T15:57:22-05:00",
+  "path": "/nix/store/fs4x7m2lr8wf9q3ainya7dwwh9li5v23-vim-gnupg",
+  "sha256": "15jqb6fvn90y60gkam1zb5ni4g5120cbb3j2vlxshr9k3mfr55cw",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

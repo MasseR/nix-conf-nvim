@@ -38,8 +38,8 @@ in
       myPlugins.syntastic
       myPlugins.vim-gnupg
       myPlugins.tcomment_vim
-      myPlugins.unimpaired
-      myPlugins.gutentags
+      myPlugins.vim-unimpaired
+      myPlugins.vim-gutentags
       myPlugins.asyncrun
       myPlugins.asynctasks
       myPlugins.vim-lsp

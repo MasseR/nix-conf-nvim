@@ -23,12 +23,8 @@ in
       vim-markdown
       vim-nix
       fugitive
-      Tagbar
       signature
-      vim-orgmode
-      vim-easy-align
       dhall-vim
-      easy-align
       purescript-vim
       xptemplate
       myPlugins.customtemplates
@@ -40,8 +36,6 @@ in
       myPlugins.tcomment_vim
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
-      myPlugins.asyncrun
-      myPlugins.asynctasks
       myPlugins.vim-lsp
       myPlugins.vim-ghcid-quickfix
     ];
@@ -81,8 +75,6 @@ in
     " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
     let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
     let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
-
-    let g:async_cabal_enable = 0
 
     ${lsp_settings}
 

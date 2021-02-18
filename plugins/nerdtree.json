@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/scrooloose/nerdtree",
-  "rev": "1d46d6df3e581984d4b31d30d362cb94bc993e1d",
-  "date": "2021-02-09T21:50:35-05:00",
-  "path": "/nix/store/jv0dmmlasah94ka1nli4xpn9h081id0a-nerdtree",
-  "sha256": "1zm08jrc2grd7fbcsxwspsj4jlv92s45wa54x404vijxyvgis9bz",
+  "rev": "a1fa4a33bf16b6661e502080fc97788bb98afd35",
+  "date": "2021-02-12T23:14:26-05:00",
+  "path": "/nix/store/psizxg7jis7grnxw3bljvgg4zxkrydld-nerdtree",
+  "sha256": "1qi2jzrps2c2h8c91rxma445yj8knl41sb5yfg37wjnsbig6jcxl",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

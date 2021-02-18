@@ -45,8 +45,6 @@ noremap <Leader>ll :CtrlPTag<cr>
 
 noremap <Leader>tt :Tagbar<cr>
 
-" prosession
-noremap <Leader>ss :CtrlPObsession<cr>
 
 " Misc
 noremap <leader>ut :GundoToggle<cr>

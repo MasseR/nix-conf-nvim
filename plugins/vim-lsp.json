@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/prabirshrestha/vim-lsp",
-  "rev": "21a29936ed74b2212e1904cca6c22bff4e27b637",
-  "date": "2021-02-02T04:10:04+00:00",
-  "path": "/nix/store/df4040vaaffdilk1fy5ig94nmdmm5vnv-vim-lsp",
-  "sha256": "11jlqri1fyh1mbxrkihg1jj7g8mllh9w6gy64ah8gvpw505fws4c",
+  "rev": "6f8dfe19d59041a606f30b7764ccd51d4299d0e5",
+  "date": "2021-02-12T19:54:48+09:00",
+  "path": "/nix/store/jarvqfwvhprmy9qh3iccf15kkvvzykvy-vim-lsp",
+  "sha256": "0rqlzp5qbidd1f02yx1l1cf0a5bdl7ha4wsixakixdrsy4ws68fh",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

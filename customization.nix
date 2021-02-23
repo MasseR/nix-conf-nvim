@@ -40,13 +40,7 @@ in
     opt = [
     ];
   };
-  customRC =
-    let
-    hasktagging = pkgs.buildEnv {
-      name ="hasktagging-complete";
-      paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags pkgs.ctags ];
-    };
-  in with builtins; ''
+  customRC = with builtins; ''
     ${readFile ./vimrc/generic.vim}
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/lsp_settings.vim}

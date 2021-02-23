@@ -1,24 +1,10 @@
-{ servers ? {} }:
-
-# I'm not hardcoding the binary with nix in the generic configuration, because
-# there might be language servers that depend on the project packages, in which
-# case the tooling should be provided by the shell
-let mkServer = language: binary:
-  ''
-  if executable('${binary}')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': '${language}-lsp',
-        \ 'cmd': {server_info->['${binary}']},
-        \ 'allowlist': ['${language}'],
-        \ })
-  endif
-  '';
-
-in
-
-with builtins;
-''
-${concatStringsSep "\n" (attrValues (mapAttrs mkServer servers))}
+if executable('dhall-lsp-server')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'dhall-lsp',
+      \ 'cmd': {server_info->['dhall-lsp-server']},
+      \ 'allowlist': ['dhall'],
+      \ })
+endif
 
 function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
@@ -41,4 +27,3 @@ augroup lsp_install
   " call s:on_lsp_buffer_enabled only for languages that has the server registered.
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-''

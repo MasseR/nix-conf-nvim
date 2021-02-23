@@ -64,32 +64,9 @@ endif
 " Statusline always
 set laststatus=2
 
+" Vimwiki configuration
 let g:vimwiki_list = [ {'path': '~/wikidata/', 'path_html': '~/public_html/', 'ext': '.md', 'syntax': 'markdown'} , {'path': '~/personal_wiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_dir_link = 'index'
-
-if has('nvim')
-    :tnoremap <Esc> <C-\><C-n>
-    :tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
-    :tnoremap <A-h> <C-\><C-N><C-w>h
-    :tnoremap <A-j> <C-\><C-N><C-w>j
-    :tnoremap <A-k> <C-\><C-N><C-w>k
-    :tnoremap <A-l> <C-\><C-N><C-w>l
-    :inoremap <A-h> <C-\><C-N><C-w>h
-    :inoremap <A-j> <C-\><C-N><C-w>j
-    :inoremap <A-k> <C-\><C-N><C-w>k
-    :inoremap <A-l> <C-\><C-N><C-w>l
-    :nnoremap <A-h> <C-w>h
-    :nnoremap <A-j> <C-w>j
-    :nnoremap <A-k> <C-w>k
-    :nnoremap <A-l> <C-w>l
-endif
-
-function! HsCheck()
-  if exists(":GhcModCheckAsync")
-    :GhcModCheckAsync
-  endif
-endfunction
-" autocmd BufwritePost *.hs call HsCheck()
 
 autocmd CursorHold *.* checktime
 
@@ -98,3 +75,34 @@ let g:elm_format_autosave = 0
 " Vim swap
 silent !mkdir ~/.vim/swap > /dev/null 2>&1
 set directory=~/.vim/swap
+
+if(has('gui_running'))
+  set guioptions=
+  set guifont=Iosevka\ 11
+  let g:gtk_nocache=[0x00000000, 0xfc00ffff, 0xf8000001, 0x78000001]
+endif
+
+" Try out getting used to folding again
+" autocmd BufEnter *.hs :setlocal foldmethod=indent
+set nofoldenable
+
+" let g:vimwiki_folding='expr'
+
+noremap <leader>aa :vimgrep /:W<C-r>=strftime("%V")<cr>/ ~/wikidata/**/*<cr>
+
+" Teach myself shorter lines
+set colorcolumn=110
+
+set number
+set relativenumber
+
+" gutentags
+" call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
+let g:gutentags_project_info = [{'type': 'haskell', 'glob': '*.cabal'}]
+" call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
+if executable("hasktagging")
+  let g:gutentags_ctags_executable_haskell = 'hasktagging'
+endif
+if executable("ctags")
+  let g:gutentags_ctags_executable = 'ctags'
+endif

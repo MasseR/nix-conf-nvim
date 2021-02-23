@@ -2,8 +2,6 @@
 let
   # myPlugins = (import ./plugins.nix){pkgs=pkgs;};
   myPlugins = pkgs.callPackage ./plugins.nix {};
-  generic = builtins.readFile ./vimrc/generic.vim;
-  mappings = builtins.readFile ./vimrc/mappings.vim;
 
 in
 
@@ -48,36 +46,10 @@ in
       name ="hasktagging-complete";
       paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags pkgs.ctags ];
     };
-    lsp_settings = import ./lsp_settings.nix { servers = { dhall = "dhall-lsp-server"; }; };
-  in ''
-    ${generic}
-
-    ${mappings}
-
-    " Try out getting used to folding again
-    " autocmd BufEnter *.hs :setlocal foldmethod=indent
-    set nofoldenable
-
-    " let g:vimwiki_folding='expr'
-
-    noremap <leader>aa :vimgrep /:W<C-r>=strftime("%V")<cr>/ ~/wikidata/**/*<cr>
-
-    " Teach myself shorter lines
-    set colorcolumn=110
-
-    set number
-    set relativenumber
-
-    " gutentags
-    set statusline+=%{gutentags#statusline()}
-    " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
-    let g:gutentags_project_info = [{'type': 'haskell', 'glob': '*.cabal'}]
-    " call add(g:gutentags_project_info, {'type': 'haskell', 'glob': '*.cabal'})
-    let g:gutentags_ctags_executable_haskell = '${hasktagging}/bin/hasktagging'
-    let g:gutentags_ctags_executable = '${pkgs.ctags}/bin/ctags'
-
-    ${lsp_settings}
-
-    abbreviate :shrug: ¯\_(ツ)_/¯
+  in with builtins; ''
+    ${readFile ./vimrc/generic.vim}
+    ${readFile ./vimrc/mappings.vim}
+    ${readFile ./vimrc/lsp_settings.vim}
+    ${readFile ./vimrc/abbreviations.vim}
   '';
 }

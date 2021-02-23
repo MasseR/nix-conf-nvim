@@ -13,9 +13,11 @@ let
 in
 plugins //
 rec {
-  # Templates for xptemplate
-  "customtemplates" = buildvimPlugin {
-    name = "customtemplates";
-    src = ./templates;
+  # Configuration as a plugin
+  # This allows me to use ftplugin as it's meant to be used
+  # without having to play around with autocmds
+  "masser" = buildvimPlugin {
+    name = "masser";
+    src = ./masser;
   };
 }

@@ -65,8 +65,11 @@ endif
 set laststatus=2
 
 " Vimwiki configuration
+" These options need to be in the general path
+" For more customization, check masser/ftplugin/vimwiki.vim
 let g:vimwiki_list = [ {'path': '~/wikidata/', 'path_html': '~/public_html/', 'ext': '.md', 'syntax': 'markdown'} , {'path': '~/personal_wiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_dir_link = 'index'
+let g:vimwiki_folding = 'expr'
 
 autocmd CursorHold *.* checktime
 

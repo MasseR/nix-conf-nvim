@@ -14,7 +14,7 @@ let
   # External tool required for things to work
   hasktagging = pkgs.buildEnv {
     name ="hasktagging-complete";
-    paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags pkgs.ctags ];
+    paths = with pkgs.haskellPackages; [ (callPackage ./hasktagging {}) hasktags ];
   };
 
 in

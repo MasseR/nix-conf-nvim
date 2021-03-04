@@ -1,1 +1,1 @@
-autocmd InsertLeave <buffer> write
+autocmd InsertLeave <buffer> update

@@ -1,0 +1,1 @@
+autocmd InsertLeave <buffer> write

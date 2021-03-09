@@ -43,8 +43,6 @@ noremap <Leader>lf :CtrlP<cr>
 noremap <Leader>lt :CtrlPTag<cr>
 noremap <Leader>ll :CtrlPTag<cr>
 
-noremap <Leader>tt :Tagbar<cr>
-
 
 " Misc
 noremap <leader>ut :GundoToggle<cr>

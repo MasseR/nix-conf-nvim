@@ -26,6 +26,7 @@ in
       purescript-vim
       xptemplate
       todo-txt-vim
+      vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent

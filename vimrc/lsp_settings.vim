@@ -5,6 +5,13 @@ if executable('dhall-lsp-server')
       \ 'allowlist': ['dhall'],
       \ })
 endif
+if executable('haskell-language-server-wrapper')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'haskell-lsp',
+      \ 'cmd': {server_info->['haskell-language-server-wrapper', '--lsp']},
+      \ 'allowlist': ['haskell'],
+      \ })
+endif
 
 function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
@@ -18,6 +25,8 @@ function! s:on_lsp_buffer_enabled() abort
   nmap <buffer> [g <Plug>(lsp-previous-diagnostic)
   nmap <buffer> ]g <Plug>(lsp-next-diagnostic)
   nmap <buffer> K <plug>(lsp-hover)
+  nmap <buffer> <leader>a <plug>(lsp-code-action)
+  nmap <buffer> <leader>dd <plug>(lsp-document-diagnostics)
 
   " refer to doc to add more commands
 endfunction

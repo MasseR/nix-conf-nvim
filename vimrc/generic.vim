@@ -78,7 +78,7 @@ autocmd CursorHold *.* checktime
 let g:elm_format_autosave = 0
 
 " Vim swap
-silent !mkdir ~/.vim/swap > /dev/null 2>&1
+silent !mkdir -p ~/.vim/swap > /dev/null 2>&1
 set directory=~/.vim/swap
 
 if(has('gui_running'))

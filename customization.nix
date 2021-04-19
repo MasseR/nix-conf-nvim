@@ -37,7 +37,6 @@ in
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-lsp
-      myPlugins.vim-ghcid-quickfix
     ];
     opt = [
     ];

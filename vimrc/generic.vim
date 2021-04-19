@@ -37,10 +37,14 @@ let g:ctrlp_root_markers = ['pom.xml', '.projectile', '.git', '*.cabal', 'packag
 set wildignore+=*/.git/*,*.orig,*_LOCAL_*,*_REMOTE_*,*_BACKUP_*,*_BASE_*
 " Haskell ignore
 set wildignore+=*.hi,*.o,*/dist/*,*_o,*/dist-newstyle/*
+" Javascript ignore
+set wildignore+=*/node_modules/*
+" Nix results. The 'result' symlinks get expanded to /nix/store, so I need to
+" have that as the ignore
+set wildignore+=result-*/*
+set wildignore+=result/*
 " Java ignore
 set wildignore+=*/target/*,*.class
-" Node
-set wildignore+=node_modules
 
 set tags=tags;
 " let g:gutentags_ctags_executable = "ctags"

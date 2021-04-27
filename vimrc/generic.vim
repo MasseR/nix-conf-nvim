@@ -1,3 +1,8 @@
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
 let g:deoplete#enable_at_startup = 1
 
 colorscheme zenburn

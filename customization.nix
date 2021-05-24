@@ -9,19 +9,19 @@ in
   plugins = with pkgs.vimPlugins; {
     start = [
       elm-vim
-      vimproc
+      vimproc-vim
       vimwiki
-      gitgutter
-      airline
+      vim-gitgutter
+      vim-airline
       vim-airline-themes
       zenburn
-      ctrlp
-      Gundo
-      surround
+      ctrlp-vim
+      gundo-vim
+      vim-surround
       vim-markdown
       vim-nix
-      fugitive
-      signature
+      vim-fugitive
+      vim-signature
       dhall-vim
       purescript-vim
       xptemplate

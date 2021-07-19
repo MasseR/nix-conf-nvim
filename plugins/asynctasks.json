@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/skywind3000/asynctasks.vim",
-  "rev": "855be14abbfbe981526f522ed2e91a985e98e689",
-  "date": "2021-02-14T19:28:08+08:00",
-  "path": "/nix/store/pwgw1k3wpq1saj5r3b3rxwl61lqc5fjb-asynctasks.vim",
-  "sha256": "0r8bk995md6myddp5vk6sa9g5mpgfsgyvkh89h1war7ja6kx1wql",
+  "rev": "5bf9e330f07843c6f3688c4033cc4793b8c15ed1",
+  "date": "2021-05-12T20:37:09+08:00",
+  "path": "/nix/store/wlvb4pj9inlnya42icmbf4kqvk0d6ild-asynctasks.vim",
+  "sha256": "0h83c2sf2wcpcd3x46jbn16f3ciyzp9dvyjzga8lrcvvsp9wj8sy",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

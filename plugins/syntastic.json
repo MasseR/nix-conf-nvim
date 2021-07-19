@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/scrooloose/syntastic",
-  "rev": "d97a664b9adbd1a0a9cba6c1c3baf071a1059d1e",
-  "date": "2021-01-04T17:22:20+02:00",
-  "path": "/nix/store/rq7a6nx2dvf70jk1yq0fjz4dgj91dqy4-syntastic",
-  "sha256": "1azranlzdm1w98ifmczp1zx1w66yrpdi9h3k05v126rwaqkd6bsj",
+  "rev": "c89741ef310fd0a380ffb80b80e10f197afd6224",
+  "date": "2021-07-01T10:00:36+03:00",
+  "path": "/nix/store/41zaglrjw9g8kkr63ia88y2cdaqwaa4g-syntastic",
+  "sha256": "0n691w9mcq0ks7wvj9mpmwhqnkcd11lhzf4fz6pkki8g5i7zhqrh",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

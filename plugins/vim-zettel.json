@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/michal-h21/vim-zettel",
+  "rev": "929d90eec62e6f693c2702d2b6f76a93f2f1689d",
+  "date": "2020-10-22T21:00:17+02:00",
+  "path": "/nix/store/makzck3nvq3a9ch86wp46ly4a2qf5ady-vim-zettel",
+  "sha256": "07ma6ylvvyncr24pinvlybygddjdi2r835x7q8c52mnz96dcmz6m",
+  "fetchSubmodules": false,
+  "deepClone": false,
+  "leaveDotGit": false
+}

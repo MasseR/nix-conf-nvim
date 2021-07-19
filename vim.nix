@@ -21,5 +21,5 @@ in
 
 pkgs.buildEnv {
   name = "vim-env";
-  paths = [vimPkg hasktagging];
+  paths = [vimPkg hasktagging pkgs.nodejs];
 }

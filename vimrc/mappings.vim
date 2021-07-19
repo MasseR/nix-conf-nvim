@@ -21,10 +21,7 @@ nmap ga <Plug>(EasyAlign>
 :inoremap <C-E> <End>
 
 " Fugitive helpers, prefix g
-noremap <leader>gs :Gstatus<cr>
-noremap <leader>gbl :Gblame<cr>
-noremap <leader>glg :Glog<cr>
-noremap <leader>ged :Gedit<cr>
+noremap <leader>gs :Git<cr>
 
 " File helpers, prefix f
 noremap <leader>ft :NERDTreeToggle<cr>
@@ -62,3 +59,10 @@ endif
 
 " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
 autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms
+
+" LanguageClient
+nmap <leader>la <Plug>(lcn-code-action)
+nmap <leader>ll <Plug>(lcn-menu)
+nmap <leader>le <Plug>(lcn-explain-error)
+nmap ]n <Plug>(lcn-diagnostics-next)
+nmap [n <Plug>(lcn-diagnostics-prev)

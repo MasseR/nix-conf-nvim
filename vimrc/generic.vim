@@ -78,7 +78,7 @@ set laststatus=2
 " For more customization, check masser/ftplugin/vimwiki.vim
 "
 " Also, no multiline lists..?
-let g:vimwiki_list = [ {'path': '~/wikidata/', 'path_html': '~/public_html/', 'ext': '.md', 'syntax': 'markdown'}, {'path': '~/work_wiki/', 'ext': '.md', 'syntax': 'markdown'} ]
+let g:vimwiki_list = [ {'path': '~/zettel/', 'ext': '.md', 'syntax': 'markdown'} ]
 let g:vimwiki_dir_link = 'index'
 let g:vimwiki_folding = 'expr'
 
@@ -120,3 +120,7 @@ endif
 if executable("ctags")
   let g:gutentags_ctags_executable = 'ctags'
 endif
+
+
+let g:LanguageClient_serverCommands = { 'haskell': ['haskell-language-server-wrapper', '--lsp'] }
+

@@ -2,7 +2,7 @@ let mapleader = " "
 let maplocalleader = " "
 
 " Generic
-noremap <leader>w :w<cr>
+" noremap <leader>w :w<cr>
 
 " Align config
 xmap ga <Plug>(EasyAlign)

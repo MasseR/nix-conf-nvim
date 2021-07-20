@@ -31,13 +31,14 @@ in
       # coc-nvim
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
-      myPlugins.vim-haskell-indent
+      # myPlugins.vim-haskell-indent
       myPlugins.nerdtree
       myPlugins.syntastic
       myPlugins.vim-gnupg
       myPlugins.tcomment_vim
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
+      # myPlugins.vim-lsp
       # myPlugins.vim-lsp
     ];
     opt = [

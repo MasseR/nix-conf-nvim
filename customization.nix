@@ -27,7 +27,7 @@ in
       xptemplate
       todo-txt-vim
       vim-ledger
-      LanguageClient-neovim
+      # LanguageClient-neovim
       # coc-nvim
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -38,8 +38,7 @@ in
       myPlugins.tcomment_vim
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
-      # myPlugins.vim-lsp
-      # myPlugins.vim-lsp
+      myPlugins.vim-lsp
     ];
     opt = [
     ];
@@ -49,5 +48,6 @@ in
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/abbreviations.vim}
     ${readFile ./vimrc/zettel_settings.vim}
+    ${readFile ./vimrc/lsp_settings.vim}
   '';
 }

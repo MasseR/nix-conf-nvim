@@ -60,9 +60,9 @@ endif
 " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
 autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms
 
-" LanguageClient
-nmap <leader>la <Plug>(lcn-code-action)
-nmap <leader>ll <Plug>(lcn-menu)
-nmap <leader>le <Plug>(lcn-explain-error)
-nmap ]n <Plug>(lcn-diagnostics-next)
-nmap [n <Plug>(lcn-diagnostics-prev)
+" " LanguageClient
+" nmap <leader>la <Plug>(lcn-code-action)
+" nmap <leader>ll <Plug>(lcn-menu)
+" nmap <leader>le <Plug>(lcn-explain-error)
+" nmap ]n <Plug>(lcn-diagnostics-next)
+" nmap [n <Plug>(lcn-diagnostics-prev)

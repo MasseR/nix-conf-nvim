@@ -11,7 +11,8 @@ in
 , Plugin::{ name = "vim-haskell-indent", url = "https://github.com/itchyny/vim-haskell-indent" }
 , Plugin::{ name = "vim-trailing-whitespace", url = "https://github.com/bronson/vim-trailing-whitespace" }
 , Plugin::{ name = "vim-gnupg", url = "https://github.com/jamessan/vim-gnupg" }
-, Plugin::{ name = "vim-lsp", url = "https://github.com/prabirshrestha/vim-lsp" }
+-- , Plugin::{ name = "vim-lsp", url = "https://github.com/prabirshrestha/vim-lsp" }
+, Plugin::{ name = "vim-lsp", url = "https://github.com/MasseR/vim-lsp" }
 , Plugin::{ name = "vim-ghcid-quickfix", url = "https://github.com/aiya000/vim-ghcid-quickfix" } -- Triage
 , Plugin::{ name = "vim-zettel", url = "https://github.com/michal-h21/vim-zettel" }
 ]

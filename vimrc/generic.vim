@@ -122,7 +122,8 @@ if executable("ctags")
 endif
 
 
-let g:LanguageClient_serverCommands = {
-      \ 'haskell': ['haskell-language-server-wrapper', '--lsp'],
-      \ 'dhall': ['dhall-lsp-server']
-      \ }
+" let g:LanguageClient_serverCommands = {
+"       \ 'haskell': ['haskell-language-server-wrapper', '--lsp'],
+"       \ 'dhall': ['dhall-lsp-server'],
+"       \ 'nix': ['rnix-lsp']
+"       \ }

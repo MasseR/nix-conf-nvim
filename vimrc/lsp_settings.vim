@@ -5,6 +5,13 @@ if executable('dhall-lsp-server')
       \ 'allowlist': ['dhall'],
       \ })
 endif
+if executable('rnix-lsp')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'rnix-lsp',
+      \ 'cmd': {server_info->['rnix-lsp']},
+      \ 'allowlist': ['nix'],
+      \ })
+endif
 if executable('haskell-language-server-wrapper')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'haskell-lsp',

@@ -55,5 +55,10 @@ in    [ Plugin::{
         , name = "vim-zettel"
         , url = "https://github.com/michal-h21/vim-zettel"
         }
+      , Plugin::{
+        , name = "vim-ledger"
+        , url = "https://github.com/gregorias/vim-ledger"
+        , comment = Some "The upstream one has a bug in how it handles hledger"
+        }
       ]
     : List Plugin.Type

@@ -11,7 +11,7 @@ function prefetch() {
 
 eval "$(dhall-to-bash --declare PLUGINS <<< './plugin_names.dhall')"
 
-rm *.json
+rm ./*.json
 
 for plugin in "${PLUGINS[@]}"; do
   eval "url=$(dhall-to-bash <<< "(./plugins.dhall).$plugin.url")"

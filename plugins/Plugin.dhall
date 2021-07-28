@@ -4,7 +4,7 @@
 -- Dependencies is an optional list of dependencies, used as an input to the buildvimPlugin section
 let Plugin =
       { Type =
-          { name : Text
+          {
           , url : Text
           , dependencies : List Text
           , comment : Optional Text

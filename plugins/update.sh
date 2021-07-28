@@ -9,9 +9,14 @@ function prefetch() {
   nix-prefetch-git "${url}" > "${name}.json" &
 }
 
+eval "$(dhall-to-bash --declare PLUGINS <<< './plugin_names.dhall')"
+
 rm *.json
 
-eval "$(dhall text < ./plugin_eval.dhall)"
+for plugin in "${PLUGINS[@]}"; do
+  eval "url=$(dhall-to-bash <<< "(./plugins.dhall).$plugin.url")"
+  prefetch "$plugin" "$url"
+done
 
 wait
 

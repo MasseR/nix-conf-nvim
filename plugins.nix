@@ -2,13 +2,18 @@
 
 let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
-  pluginsList = dhallToNix "${./plugins}/plugins.dhall";
+  pluginsList = dhallToNix "toMap ${./plugins}/plugins.dhall";
   toPlugin = with lib; meta: buildvimPlugin {
     name = "${meta.name}";
-    src = fetchgit { inherit (importJSON (./plugins + "/${meta.name}.json")) url rev sha256 fetchSubmodules; };
-    dependencies = meta.dependencies;
+    src = fetchgit {
+      inherit (importJSON (./plugins + "/${meta.name}.json")) url rev sha256 fetchSubmodules;
+    };
+    dependencies = meta.plugin.dependencies;
   };
-  plugins = with lib; listToAttrs (map (meta: {name = meta.name; value = toPlugin meta; }) pluginsList);
+  fromDhallPlugin = meta: { name = meta.mapKey; plugin = meta.mapValue; };
+  plugins = with lib;
+  listToAttrs
+    ( map (meta: {name = meta.mapKey; value = toPlugin (fromDhallPlugin meta); }) pluginsList );
 
 in
 plugins //

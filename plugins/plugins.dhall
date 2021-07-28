@@ -1,64 +1,37 @@
 let Plugin = ./Plugin.dhall
 
-in    [ Plugin::{
-        , name = "asyncrun"
-        , url = "https://github.com/skywind3000/asyncrun.vim"
-        }
-      , Plugin::{
-        , name = "asynctasks"
-        , url = "https://github.com/skywind3000/asynctasks.vim"
-        , dependencies = [ "asyncrun" ]
-        }
-      , Plugin::{
-        , name = "vim-gutentags"
-        , url = "https://github.com/ludovicchabant/vim-gutentags"
-        }
-      , Plugin::{
-        , name = "vim-unimpaired"
-        , url = "https://github.com/tpope/vim-unimpaired"
-        }
-      , Plugin::{
-        , name = "tcomment_vim"
-        , url = "https://github.com/tomtom/tcomment_vim"
-        }
-      , Plugin::{
-        , name = "syntastic"
-        , url = "https://github.com/scrooloose/syntastic"
-        }
-      , Plugin::{ name = "xmledit", url = "https://github.com/sukima/xmledit" }
-      , Plugin::{
-        , name = "nerdtree"
-        , url = "https://github.com/scrooloose/nerdtree"
-        }
-      , Plugin::{
-        , name = "vim-haskell-indent"
-        , url = "https://github.com/itchyny/vim-haskell-indent"
-        }
-      , Plugin::{
-        , name = "vim-trailing-whitespace"
-        , url = "https://github.com/bronson/vim-trailing-whitespace"
-        }
-      , Plugin::{
-        , name = "vim-gnupg"
-        , url = "https://github.com/jamessan/vim-gnupg"
-        }
-      , Plugin::{
-        , name = "vim-lsp"
-        , url = "https://github.com/MasseR/vim-lsp"
-        , comment = Some "Fork has the wingman root"
-        }
-      , Plugin::{
-        , name = "vim-ghcid-quickfix"
-        , url = "https://github.com/aiya000/vim-ghcid-quickfix"
-        }
-      , Plugin::{
-        , name = "vim-zettel"
-        , url = "https://github.com/michal-h21/vim-zettel"
-        }
-      , Plugin::{
-        , name = "vim-ledger"
-        , url = "https://github.com/gregorias/vim-ledger"
-        , comment = Some "The upstream one has a bug in how it handles hledger"
-        }
-      ]
-    : List Plugin.Type
+in  { asyncrun = Plugin::{ url = "https://github.com/skywind3000/asyncrun.vim" }
+    , asynctasks = Plugin::{
+      , url = "https://github.com/skywind3000/asynctasks.vim"
+      , dependencies = [ "asyncrun" ]
+      }
+    , vim-gutentags = Plugin::{
+      , url = "https://github.com/ludovicchabant/vim-gutentags"
+      }
+    , vim-unimpaired = Plugin::{
+      , url = "https://github.com/tpope/vim-unimpaired"
+      }
+    , tcomment_vim = Plugin::{ url = "https://github.com/tomtom/tcomment_vim" }
+    , syntastic = Plugin::{ url = "https://github.com/scrooloose/syntastic" }
+    , xmledit = Plugin::{ url = "https://github.com/sukima/xmledit" }
+    , nerdtree = Plugin::{ url = "https://github.com/scrooloose/nerdtree" }
+    , vim-haskell-indent = Plugin::{
+      , url = "https://github.com/itchyny/vim-haskell-indent"
+      }
+    , vim-trailing-whitespace = Plugin::{
+      , url = "https://github.com/bronson/vim-trailing-whitespace"
+      }
+    , vim-gnupg = Plugin::{ url = "https://github.com/jamessan/vim-gnupg" }
+    , vim-lsp = Plugin::{
+      , url = "https://github.com/MasseR/vim-lsp"
+      , comment = Some "Fork has the wingman root"
+      }
+    , vim-ghcid-quickfix = Plugin::{
+      , url = "https://github.com/aiya000/vim-ghcid-quickfix"
+      }
+    , vim-zettel = Plugin::{ url = "https://github.com/michal-h21/vim-zettel" }
+    , vim-ledger = Plugin::{
+      , url = "https://github.com/gregorias/vim-ledger"
+      , comment = Some "The upstream one has a bug in how it handles hledger"
+      }
+    }

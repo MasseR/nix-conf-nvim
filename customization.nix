@@ -26,9 +26,7 @@ in
       purescript-vim
       xptemplate
       todo-txt-vim
-      vim-ledger
-      # LanguageClient-neovim
-      # coc-nvim
+      # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
       # myPlugins.vim-haskell-indent
@@ -39,6 +37,7 @@ in
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-lsp
+      myPlugins.vim-ledger
     ];
     opt = [
     ];

@@ -121,9 +121,3 @@ if executable("ctags")
   let g:gutentags_ctags_executable = 'ctags'
 endif
 
-
-" let g:LanguageClient_serverCommands = {
-"       \ 'haskell': ['haskell-language-server-wrapper', '--lsp'],
-"       \ 'dhall': ['dhall-lsp-server'],
-"       \ 'nix': ['rnix-lsp']
-"       \ }

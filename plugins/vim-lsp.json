@@ -1,9 +1,9 @@
 {
   "url": "https://github.com/MasseR/vim-lsp",
-  "rev": "38ba38385629766cc42694bb1e2b77098ac51c38",
-  "date": "2021-07-23T11:04:08+03:00",
-  "path": "/nix/store/g130ndfjgz2b7fc9xv3xrja9mlcdqv2k-vim-lsp",
-  "sha256": "08pcg80ba3sb6rdryp864pdh30265hfw56zy1bvb24b3ms4xg22g",
+  "rev": "1e71d5b923ec2574f9b07fbebaf6af90491db31c",
+  "date": "2021-08-06T13:05:00+03:00",
+  "path": "/nix/store/2p3spjacym11pw09amnf0l9346zh2w9l-vim-lsp",
+  "sha256": "1977lp4rndan4sczlzrhsk3sgynbz0yksz4yh7d6rl9pirk5g6fm",
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

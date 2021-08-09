@@ -78,7 +78,9 @@ set laststatus=2
 " For more customization, check masser/ftplugin/vimwiki.vim
 "
 " Also, no multiline lists..?
-let g:vimwiki_list = [ {'path': '~/zettel/', 'ext': '.md', 'syntax': 'markdown'} ]
+let g:vimwiki_list = [ {'path': '~/zettel/', 'ext': '.md', 'syntax': 'markdown'}
+                   \ , {'path': '~/work_zettel/', 'ext': '.md', 'syntax': 'markdown'}
+                   \ ]
 let g:vimwiki_dir_link = 'index'
 let g:vimwiki_folding = 'expr'
 

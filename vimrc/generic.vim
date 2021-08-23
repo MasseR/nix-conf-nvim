@@ -23,6 +23,10 @@ set expandtab
 set ruler
 set wildmenu
 
+" Line wrapping
+" Enable wrapping and break on word boundaries
+set wrap linebreak
+
 set backup
 silent !mkdir ~/.backup > /dev/null 2>&1
 set backupdir=~/.backup/

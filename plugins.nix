@@ -25,4 +25,8 @@ rec {
     name = "masser";
     src = ./masser;
   };
+  # vim-lsp-custom = buildvimPlugin {
+  #   name = "vim-lsp";
+  #   src = /home/masse/git/vim-lsp;
+  # };
 }

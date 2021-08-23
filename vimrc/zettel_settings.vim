@@ -6,7 +6,7 @@ noremap <leader>ordd :call ZettelDaily("~/zettel")<cr>
 noremap <leader>owf :CtrlP ~/work_zettel/work<cr>
 noremap <leader>owdd :call ZettelDaily("~/work_zettel/work")<cr>
 
-let s:timefmt = "%Y-%m-%d.%a"
+let s:timefmt = "%Y-%m-%d-%a"
 function! ZettelEvalTemplate(path)
   execute "0r " . a:path
   execute ":%s/{{yesterday}}/\\=strftime(\"" . s:timefmt . "\", localtime() - 3600 * 24)/ge"

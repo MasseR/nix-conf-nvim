@@ -28,6 +28,7 @@ rec {
     pname = "masser";
     version = "0.0.1";
     src = ./masser;
+
   };
   # vim-lsp-custom = buildvimPlugin {
   #   name = "vim-lsp";

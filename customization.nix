@@ -24,7 +24,7 @@ in
       vim-signature
       dhall-vim
       purescript-vim
-      xptemplate
+      # xptemplate
       todo-txt-vim
       # vim-ledger
       myPlugins.masser # Custom ftplugins

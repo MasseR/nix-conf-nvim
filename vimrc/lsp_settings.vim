@@ -1,3 +1,10 @@
+if executable('purescript-language-server')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'purescript-language-server',
+      \ 'cmd': {server_info->['purescript-language-server', '--stdio']},
+      \ 'allowlist': ['purescript'],
+      \ })
+endif
 if executable('dhall-lsp-server')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'dhall-lsp',

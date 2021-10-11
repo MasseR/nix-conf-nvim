@@ -1,3 +1,10 @@
+if executable('ocamllsp')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'ocamllsp',
+      \ 'cmd': {server_info->['ocamllsp']},
+      \ 'allowlist': ['ocaml'],
+      \ })
+endif
 if executable('purescript-language-server')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'purescript-language-server',

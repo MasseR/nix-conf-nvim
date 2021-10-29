@@ -1,3 +1,10 @@
+if executable('clojure-lsp')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'clojure-lsp',
+      \ 'cmd': {server_info->['clojure-lsp']},
+      \ 'allowlist': ['clojure'],
+      \ })
+endif
 if executable('ocamllsp')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'ocamllsp',

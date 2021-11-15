@@ -2,6 +2,7 @@
   description = "A very basic flake";
 
   inputs = {
+    # It's impure, can't use it as is
     # easy-dhall-nix = { url = "github:justinwoo/easy-dhall-nix"; flake = false; };
   };
 

@@ -3,23 +3,28 @@
 
   inputs = {
     # easy-dhall-nix = { url = "github:justinwoo/easy-dhall-nix"; flake = false; };
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs, flake-utils }: {
 
-    packages.x86_64-linux.myVim = nixpkgs.legacyPackages.x86_64-linux.callPackage ./vim.nix {};
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux.myVim;
-    apps.x86_64-linux.myVim = {
-      type = "app";
-      program = "${self.packages.x86_64-linux.myVim}/bin/vim";
+    overlay = final: prev: {
+      myVim = final.callPackage ./vim.nix {};
     };
-    defaultApp.x86_64-linux = self.apps.x86_64-linux.myVim;
-
-    devShell.x86_64-linux = with nixpkgs.legacyPackages.x86_64-linux; mkShell {
+  }
+  //
+  flake-utils.lib.eachSystem ["x86_64-linux"] (system:
+  let pkgs = import nixpkgs { inherit system; overlays = [ self.overlay ]; };
+  in
+  rec {
+    packages = { inherit (pkgs) myVim; };
+    defaultPackage = packages.myVim;
+    devShell = with pkgs; mkShell {
       buildInputs = [
         dhall
       ];
     };
+  }
+  );
 
-  };
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#! nix-shell -i bash -p dhall-simple -p nix-prefetch-git
+#! nix-shell -i bash -p dhall-bash -p dhall -p nix-prefetch-git
 # shellcheck shell=bash
 
 function prefetch() {

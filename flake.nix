@@ -23,6 +23,7 @@
     devShell = with pkgs; mkShell {
       buildInputs = [
         dhall
+        dhall-lsp-server
       ];
     };
   }

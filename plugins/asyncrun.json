@@ -4,6 +4,7 @@
   "date": "2021-03-29T11:13:20+08:00",
   "path": "/nix/store/n90y692byld9xfqdp2fv71zwscp5cfkg-asyncrun.vim",
   "sha256": "11zcw0sll6qg6ha0rr6n1cw5v73azvf7ycwn9lgiwa5cj7rrqjf4",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

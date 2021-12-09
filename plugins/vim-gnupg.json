@@ -4,6 +4,7 @@
   "date": "2020-11-11T15:57:22-05:00",
   "path": "/nix/store/fs4x7m2lr8wf9q3ainya7dwwh9li5v23-vim-gnupg",
   "sha256": "15jqb6fvn90y60gkam1zb5ni4g5120cbb3j2vlxshr9k3mfr55cw",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

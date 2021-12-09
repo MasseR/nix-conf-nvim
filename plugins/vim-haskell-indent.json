@@ -4,6 +4,7 @@
   "date": "2021-08-07T07:22:17+09:00",
   "path": "/nix/store/d0gj35a1q839vm1pa4v83bd2gcr7m6mi-vim-haskell-indent",
   "sha256": "1id8dm8706xs9nnba5x99698s07saf59v7a0mhj8lpkw2k130vbr",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

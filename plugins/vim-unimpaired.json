@@ -1,9 +1,10 @@
 {
   "url": "https://github.com/tpope/vim-unimpaired",
-  "rev": "aee3455e19686ce84225752de678a9725866248b",
-  "date": "2021-08-15T17:13:36-04:00",
-  "path": "/nix/store/48qb8nfvrsd21qga9ggjj4ghrnq1dp0a-vim-unimpaired",
-  "sha256": "0j6xz4m8p351dmvhssi0f699609wpm5nz5q9xysy15vpwxds3nl9",
+  "rev": "e4006d68cd4f390efef935bc09be0ce3bd022e72",
+  "date": "2021-10-17T21:58:16-04:00",
+  "path": "/nix/store/kij1x79ajpkba5d1srrsky885x5rkq9y-vim-unimpaired",
+  "sha256": "048n8p7bjpcwdk924glqkwkp10fl813ffrjsagwwzsnakax3da5f",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

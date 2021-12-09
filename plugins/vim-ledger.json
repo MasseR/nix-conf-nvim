@@ -4,6 +4,7 @@
   "date": "2021-04-17T11:02:28+02:00",
   "path": "/nix/store/h3sdsq2qbhv4md86ga06sfrpr9214gr4-vim-ledger",
   "sha256": "0k2l8z8qkjqj4swwzlc0mf1r77n1rxi5skxwlvvwcldx0gh0mv4r",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

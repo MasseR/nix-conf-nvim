@@ -4,6 +4,7 @@
   "date": "2020-05-22T13:53:25-07:00",
   "path": "/nix/store/0vgwp5g7ix25b51adi93kjnrzxzfr0b3-vim-gutentags",
   "sha256": "0vm3bp94kbc28azsmm8505hyd9v1a9isrn5dp47njmj8w17l7725",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

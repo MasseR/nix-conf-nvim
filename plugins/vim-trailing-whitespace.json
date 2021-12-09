@@ -4,6 +4,7 @@
   "date": "2020-11-18T11:38:32-08:00",
   "path": "/nix/store/inv7mhlg98w5ps31gpcdmq017l1zbi1f-vim-trailing-whitespace",
   "sha256": "1bh15yw2aysvpn2ndnc0s6jzc0y93x6q1blc5pph67rdix5bm7gy",
+  "fetchLFS": false,
   "fetchSubmodules": false,
   "deepClone": false,
   "leaveDotGit": false

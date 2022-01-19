@@ -1,7 +1,7 @@
-{pkgs}:
+{pkgs, inputs, ...}:
 let
   # myPlugins = (import ./plugins.nix){pkgs=pkgs;};
-  myPlugins = pkgs.callPackage ./plugins.nix {};
+  myPlugins = pkgs.callPackage ./plugins.nix { inherit inputs; };
 
 in
 

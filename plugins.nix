@@ -1,22 +1,30 @@
-{pkgs, lib, fetchgit, dhallToNix}:
+{pkgs, lib, fetchgit, dhallToNix, inputs}:
 
 let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
   pluginsList = dhallToNix "toMap ${./plugins}/plugins.dhall";
-  toPlugin = with lib; meta:
-    let info = importJSON (./plugins + "/${meta.name}.json");
-    in buildvimPlugin {
-      pname = "${meta.name}";
-      version = "${info.rev}";
-      src = fetchgit {
-        inherit (info) url rev sha256 fetchSubmodules;
-      };
-      dependencies = meta.plugin.dependencies;
+  toPlugin = with lib; name: value:
+    buildvimPlugin {
+      pname = "${name}";
+      version = "${value.rev}";
+      src = value;
+      dependencies = [];
   };
   fromDhallPlugin = meta: { name = meta.mapKey; plugin = meta.mapValue; };
+  sources = {
+    inherit (inputs)
+    vim-trailing-whitespace
+    nerdtree
+    vim-gnupg
+    vim-unimpaired
+    tcomment_vim
+    vim-gutentags
+    vim-lsp
+    vim-ledger
+    syntastic;
+  };
   plugins = with lib;
-  listToAttrs
-    ( map (meta: {name = meta.mapKey; value = toPlugin (fromDhallPlugin meta); }) pluginsList );
+    listToAttrs (mapAttrsToList (name: value: { name = name; value = toPlugin name value; }) sources);
 
 in
 plugins //

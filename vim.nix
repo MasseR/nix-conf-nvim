@@ -1,7 +1,7 @@
-{pkgs, vim_configurable, ...}:
+{pkgs, vim_configurable, inputs, ...}:
 
 let
-  customizations = pkgs.callPackage ./customization.nix {};
+  customizations = pkgs.callPackage ./customization.nix { inherit inputs; };
 
   vimPkg = ((vim_configurable.override {}).customize {
     name = "vim";

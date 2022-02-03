@@ -42,8 +42,7 @@ noremap <Leader>ll :CtrlPTag<cr>
 
 
 " Misc
-noremap <leader>ut :GundoToggle<cr>
-noremap <F2> :GundoToggle<cr>
+noremap <F2> :UndotreeToggle<cr>
 
 " Fold helper
 " Close all except current line

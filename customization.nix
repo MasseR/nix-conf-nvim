@@ -16,7 +16,7 @@ in
       vim-airline-themes
       zenburn
       ctrlp-vim
-      gundo-vim
+      undotree
       vim-surround
       vim-markdown
       vim-nix

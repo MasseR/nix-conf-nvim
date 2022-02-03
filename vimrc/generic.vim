@@ -32,6 +32,7 @@ silent !mkdir ~/.backup > /dev/null 2>&1
 set backupdir=~/.backup/
 
 set undofile
+silent !mkdir ~/.vim-undos > /dev/null 2>&1
 set undodir=$HOME/.vim-undos/
 
 let g:ctrlp_cmd = "CtrlPBufTag"

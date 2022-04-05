@@ -29,7 +29,4 @@ let
 
 in
 
-pkgs.buildEnv {
-  name = "vim-env";
-  paths = [vimPkg hasktagging pkgs.nodejs];
-}
+vimPkg

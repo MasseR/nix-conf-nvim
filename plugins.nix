@@ -21,6 +21,7 @@ let
     vim-gutentags
     vim-lsp
     vim-ledger
+    vim-haskell-indent
     syntastic;
   };
   plugins = with lib;

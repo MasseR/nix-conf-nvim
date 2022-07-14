@@ -30,7 +30,7 @@ in
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
-      # myPlugins.vim-haskell-indent
+      myPlugins.vim-haskell-indent
       myPlugins.nerdtree
       myPlugins.syntastic
       myPlugins.vim-gnupg

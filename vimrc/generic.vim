@@ -99,7 +99,7 @@ set directory=~/.vim/swap
 
 if(has('gui_running'))
   set guioptions=
-  set guifont=Iosevka\ 11
+  set guifont=Hasklig\ Regular\ 11
   let g:gtk_nocache=[0x00000000, 0xfc00ffff, 0xf8000001, 0x78000001]
 endif
 

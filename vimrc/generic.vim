@@ -49,6 +49,7 @@ set wildignore+=*/.git/*,*.orig,*_LOCAL_*,*_REMOTE_*,*_BACKUP_*,*_BASE_*
 set wildignore+=*.hi,*.o,*/dist/*,*_o,*/dist-newstyle/*
 " Javascript ignore
 set wildignore+=*/node_modules/*
+set wildignore+=*/output/*
 " Nix results. The 'result' symlinks get expanded to /nix/store, so I need to
 " have that as the ignore
 set wildignore+=result-*/*
@@ -126,5 +127,10 @@ if executable("hasktagging")
 endif
 if executable("ctags")
   let g:gutentags_ctags_executable = 'ctags'
+  let g:gutentags_file_list_command = {
+        \   'markers': {
+        \     '.git': 'git ls-files',
+        \   },
+        \ }
 endif
 

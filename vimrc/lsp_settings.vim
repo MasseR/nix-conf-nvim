@@ -3,7 +3,7 @@ if executable('typescript-language-server')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'tsserver',
       \ 'cmd': {server_info->['typescript-language-server', '--stdio', '--tsserver-path', fnamemodify(exepath('tsserver'), ':h:h').'/lib/node_modules/typescript/lib']},
-      \ 'allowlist': ['typescript'],
+      \ 'allowlist': ['typescript', 'typescriptreact'],
       \ })
 endif
 if executable('clojure-lsp')

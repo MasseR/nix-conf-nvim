@@ -52,6 +52,10 @@
       url = "github:gregorias/vim-ledger";
       flake = false;
     };
+    vim-codeium = {
+      url = "github:Exafunction/codeium.vim";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, flake-utils, ... } @ inputs: {

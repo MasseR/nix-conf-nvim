@@ -41,6 +41,23 @@ in
       myPlugins.vim-ledger
     ];
     opt = [
+      # The codeium plugin is a bit iffy in the nixos world. It's fetching the
+      # codeium plugin from github and installing it under
+      # ~/.codeium/bin/<hash>/ and has the wrong interpreter. Fixing the
+      # interpreter requires patchelfing, but doing it manually is obviously
+      # finicky, breaking whenever the libc is changed.
+      #
+      # To check whether the codeium server is successfully running, you can
+      # check the g:codeium_server_job variable
+      #
+      # To fix the interpreter, run:
+      # patchelf --set-interpreter $(patchelf --print-interpreter $(readlink -f $(which patchelf))) language_server_linux_x64
+      #
+      # For keybindings, see the mappings.vim file
+      # As a spoiler, to accept the suggestion, run: Ctrl-g
+      #
+      # The plugin is set to be optional, to enable it, run: :packadd vim-codeium
+      myPlugins.vim-codeium
     ];
   };
   customRC = with builtins; ''

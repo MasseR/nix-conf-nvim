@@ -2,6 +2,13 @@
 
 let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
+  toPlugin = name: value:
+    buildvimPlugin {
+      pname = "${name}";
+      version = "${value.rev}";
+      src = value;
+      dependencies = [];
+  };
   sources = {
     inherit (inputs)
     vim-trailing-whitespace

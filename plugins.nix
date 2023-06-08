@@ -2,15 +2,6 @@
 
 let
   buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
-  pluginsList = dhallToNix "toMap ${./plugins}/plugins.dhall";
-  toPlugin = with lib; name: value:
-    buildvimPlugin {
-      pname = "${name}";
-      version = "${value.rev}";
-      src = value;
-      dependencies = [];
-  };
-  fromDhallPlugin = meta: { name = meta.mapKey; plugin = meta.mapValue; };
   sources = {
     inherit (inputs)
     vim-trailing-whitespace
@@ -30,7 +21,7 @@ let
 
 in
 plugins //
-rec {
+{
   # Configuration as a plugin
   # This allows me to use ftplugin as it's meant to be used
   # without having to play around with autocmds

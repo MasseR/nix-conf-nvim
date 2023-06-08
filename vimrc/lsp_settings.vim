@@ -41,6 +41,13 @@ if executable('rnix-lsp')
       \ 'allowlist': ['nix'],
       \ })
 endif
+if executable('nil')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'nil',
+      \ 'cmd': {server_info->['nil']},
+      \ 'allowlist': ['nix'],
+      \ })
+endif
 if executable('haskell-language-server-wrapper')
   au User lsp_setup call lsp#register_server({
       \ 'name': 'haskell-lsp',

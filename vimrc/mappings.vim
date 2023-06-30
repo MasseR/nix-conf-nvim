@@ -65,7 +65,9 @@ au FileType ledger noremap } /^\d<CR>
 au FileType ledger noremap <C-Space> :call ledger#transaction_state_toggle(line('.'), '*! ')<cr>
 
 " For codeium
-imap <script><silent><nowait><expr> <C-g> codeium#Accept()
-imap <C-;>   <Cmd>call codeium#CycleCompletions(1)<CR>
-imap <C-,>   <Cmd>call codeium#CycleCompletions(-1)<CR>
-imap <C-x>   <Cmd>call codeium#Clear()<CR>
+imap <script><silent><nowait><expr> <Tab> codeium#Accept()
+" Not sure these work :think:
+imap <C-)>   <Cmd>call codeium#CycleCompletions(1)<CR>
+imap <C-(>   <Cmd>call codeium#CycleCompletions(-1)<CR>
+" The Ctrl-x conflicted with omnicompletion
+" imap <C-x>   <Cmd>call codeium#Clear()<CR>

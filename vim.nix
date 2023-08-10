@@ -11,22 +11,6 @@ let
     vimrcConfig.packages.myVimPackage = customizations.plugins;
   });
 
-  # External tool required for things to work
-  hasktagging = pkgs.buildEnv {
-    name ="hasktagging-complete";
-    paths = with pkgs.haskell.lib;
-    let
-      hp = pkgs.haskellPackages.extend (self: super: {
-        hasktagging = justStaticExecutables (self.callPackage ./hasktagging {});
-        hasktags = justStaticExecutables (super.hasktags);
-      });
-    in
-    [
-      hp.hasktagging
-      hp.hasktags
-    ];
-  };
-
 in
 
   vimPkg

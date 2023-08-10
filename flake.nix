@@ -62,6 +62,7 @@
 
     overlay = final: prev: {
       myVim = final.callPackage ./vim.nix { inherit inputs; };
+      myNVim = final.callPackage ./neovim.nix { inherit inputs; };
       haskellPackages = prev.haskellPackages.override ( old: {
         overrides = with prev.haskell.lib; final.lib.composeExtensions ( old.overrides or (_: _: {})) (f: p: {
           hasktagging = justStaticExecutables (f.callPackage ./hasktagging {});
@@ -78,6 +79,10 @@
     packages.myVim = pkgs.buildEnv {
       name = "myVim";
       paths = [pkgs.myVim packages.hasktagging];
+    };
+    packages.myNVim = pkgs.buildEnv {
+      name = "myNVim";
+      paths = [pkgs.myNVim packages.hasktagging];
     };
     packages.hasktagging = pkgs.haskellPackages.hasktagging;
     defaultPackage = packages.myVim;

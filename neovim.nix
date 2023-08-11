@@ -1,9 +1,11 @@
-{pkgs, neovim, inputs, ...}:
+{pkgs, neovim, neovim-qt, inputs, ...}:
 
 let
   customizations = pkgs.callPackage ./customization.nix { inherit inputs; };
 
   vimPkg = neovim.override {
+    vimAlias = true;
+    viAlias = true;
     configure = {
       customRC = ''
         ${customizations.customRC}
@@ -11,8 +13,11 @@ let
       packages.myVimPackage = customizations.plugins;
     };
   };
+  qtvim = neovim-qt.override {
+    neovim = vimPkg;
+  };
 
 in
 
-  vimPkg
+  { inherit vimPkg qtvim; }
 

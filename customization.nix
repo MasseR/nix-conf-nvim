@@ -27,6 +27,7 @@ in
       # xptemplate
       todo-txt-vim
       direnv-vim
+      nvim-lspconfig
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -37,7 +38,6 @@ in
       myPlugins.tcomment_vim
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
-      myPlugins.vim-lsp
       myPlugins.vim-ledger
     ];
     opt = [
@@ -65,6 +65,6 @@ in
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/abbreviations.vim}
     ${readFile ./vimrc/zettel_settings.vim}
-    ${readFile ./vimrc/lsp_settings.vim}
+    luafile ${./vimrc/lsp_settings.lua}
   '';
 }

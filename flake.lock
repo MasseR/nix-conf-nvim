@@ -62,7 +62,6 @@
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",
         "vim-ledger": "vim-ledger",
-        "vim-lsp": "vim-lsp",
         "vim-trailing-whitespace": "vim-trailing-whitespace",
         "vim-unimpaired": "vim-unimpaired",
         "xmledit": "xmledit"
@@ -192,22 +191,6 @@
       "original": {
         "owner": "gregorias",
         "repo": "vim-ledger",
-        "type": "github"
-      }
-    },
-    "vim-lsp": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1686206318,
-        "narHash": "sha256-MV/w2qezGuaWLj+B5pwtOADZ9epI4dx7ptduC4LYTVg=",
-        "owner": "MasseR",
-        "repo": "vim-lsp",
-        "rev": "c5b4e5b64b6becbe28fdc7fb99dec59499651c18",
-        "type": "github"
-      },
-      "original": {
-        "owner": "MasseR",
-        "repo": "vim-lsp",
         "type": "github"
       }
     },

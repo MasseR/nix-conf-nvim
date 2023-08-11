@@ -44,10 +44,6 @@
       url = "github:jamessan/vim-gnupg";
       flake = false;
     };
-    vim-lsp = {
-      url = "github:MasseR/vim-lsp";
-      flake = false;
-    };
     vim-ledger = {
       url = "github:gregorias/vim-ledger";
       flake = false;
@@ -60,9 +56,11 @@
 
   outputs = { self, nixpkgs, flake-utils, ... } @ inputs: {
 
-    overlay = final: prev: {
-      myVim = final.callPackage ./vim.nix { inherit inputs; };
-      myNVim = final.callPackage ./neovim.nix { inherit inputs; };
+    overlay = final: prev:
+    let neovim = final.callPackage ./neovim.nix { inherit inputs; };
+    in {
+      myVim = neovim.vimPkg;
+      myVimQt = neovim.qtvim;
       haskellPackages = prev.haskellPackages.override ( old: {
         overrides = with prev.haskell.lib; final.lib.composeExtensions ( old.overrides or (_: _: {})) (f: p: {
           hasktagging = justStaticExecutables (f.callPackage ./hasktagging {});
@@ -80,9 +78,9 @@
       name = "myVim";
       paths = [pkgs.myVim packages.hasktagging];
     };
-    packages.myNVim = pkgs.buildEnv {
-      name = "myNVim";
-      paths = [pkgs.myNVim packages.hasktagging];
+    packages.myVimQt = pkgs.buildEnv {
+      name = "myVimQt";
+      paths = [pkgs.myVimQt packages.hasktagging];
     };
     packages.hasktagging = pkgs.haskellPackages.hasktagging;
     defaultPackage = packages.myVim;

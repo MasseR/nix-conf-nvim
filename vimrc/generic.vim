@@ -134,3 +134,4 @@ if executable("ctags")
         \ }
 endif
 
+set formatoptions=tcqj

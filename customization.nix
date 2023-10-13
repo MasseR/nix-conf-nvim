@@ -28,6 +28,7 @@ in
       todo-txt-vim
       direnv-vim
       nvim-lspconfig
+      kotlin-vim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace

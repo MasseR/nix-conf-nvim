@@ -65,9 +65,18 @@ au FileType ledger noremap } /^\d<CR>
 au FileType ledger noremap <C-Space> :call ledger#transaction_state_toggle(line('.'), '*! ')<cr>
 
 " For codeium
-imap <script><silent><nowait><expr> <Tab> codeium#Accept()
-" Not sure these work :think:
-imap <C-)>   <Cmd>call codeium#CycleCompletions(1)<CR>
-imap <C-(>   <Cmd>call codeium#CycleCompletions(-1)<CR>
-" The Ctrl-x conflicted with omnicompletion
-" imap <C-x>   <Cmd>call codeium#Clear()<CR>
+function EnableAIMapping()
+  if exists('g:codeium_server_job')
+    imap <buffer><script><silent><nowait><expr> <Tab> codeium#Accept()
+    " Not sure these work :think:
+    imap <buffer> <C-)>   <Cmd>call codeium#CycleCompletions(1)<CR>
+    imap <buffer> <C-(>   <Cmd>call codeium#CycleCompletions(-1)<CR>
+    " The Ctrl-x conflicted with omnicompletion
+    " imap <C-x>   <Cmd>call codeium#Clear()<CR>
+  endif
+endfunction
+
+autocmd BufEnter *.hs call EnableAIMapping()
+autocmd BufEnter *.ts call EnableAIMapping()
+autocmd BufEnter *.js call EnableAIMapping()
+autocmd BufEnter *.kotlin call EnableAIMapping()

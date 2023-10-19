@@ -59,6 +59,10 @@ in
       #
       # The plugin is set to be optional, to enable it, run: :packadd vim-codeium
       myPlugins.vim-codeium
+
+      # I might be switching between copilot and codeium depending on where I'm
+      # coding and I don't want them conflicting
+      copilot-vim
     ];
   };
   customRC = with builtins; ''

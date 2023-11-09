@@ -5,6 +5,7 @@ lspconfig.nil_ls.setup {}
 lspconfig.hls.setup {}
 lspconfig.dhall_lsp_server.setup {}
 lspconfig.kotlin_language_server.setup {}
+lspconfig.clojure_lsp.setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

@@ -28,6 +28,8 @@ in
       todo-txt-vim
       direnv-vim
       nvim-lspconfig
+      telescope-nvim
+      telescope-ui-select-nvim
       kotlin-vim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
@@ -71,5 +73,6 @@ in
     ${readFile ./vimrc/abbreviations.vim}
     ${readFile ./vimrc/zettel_settings.vim}
     luafile ${./vimrc/lsp_settings.lua}
+    luafile ${./vimrc/telescope.lua}
   '';
 }

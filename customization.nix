@@ -31,6 +31,10 @@ in
       telescope-nvim
       telescope-ui-select-nvim
       kotlin-vim
+      obsidian-nvim
+      nvim-cmp
+      cmp-nvim-lsp
+      cmp-buffer
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -74,5 +78,7 @@ in
     ${readFile ./vimrc/zettel_settings.vim}
     luafile ${./vimrc/lsp_settings.lua}
     luafile ${./vimrc/telescope.lua}
+    luafile ${./vimrc/cmp.lua}
+    luafile ${./vimrc/obsidian.lua}
   '';
 }

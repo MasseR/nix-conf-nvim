@@ -1,12 +1,28 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.tsserver.setup {}
-lspconfig.nil_ls.setup {}
-lspconfig.hls.setup {}
-lspconfig.dhall_lsp_server.setup {}
-lspconfig.kotlin_language_server.setup {}
-lspconfig.clojure_lsp.setup {}
-lspconfig.ocamllsp.setup {}
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+lspconfig.tsserver.setup {
+  capabilities = capabilities
+}
+lspconfig.nil_ls.setup {
+  capabilities = capabilities
+}
+lspconfig.hls.setup {
+  capabilities = capabilities
+}
+lspconfig.dhall_lsp_server.setup {
+  capabilities = capabilities
+}
+lspconfig.kotlin_language_server.setup {
+  capabilities = capabilities
+}
+lspconfig.clojure_lsp.setup {
+  capabilities = capabilities
+}
+lspconfig.ocamllsp.setup {
+  capabilities = capabilities
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

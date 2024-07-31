@@ -1,3 +1,6 @@
+-- NOTE: The ollama plugin is basically unusable at this point. I'm leaving the
+-- configuration in place, in case it does end up getting better at some point
+-- But I'm taking out the plugin from the configuration
 local response_format = "Respond EXACTLY in this format:\n```$ftype\n<your code>\n```"
 require("ollama").setup({
   -- opts = {

@@ -35,7 +35,6 @@ in
       nvim-cmp
       cmp-nvim-lsp
       cmp-buffer
-      ollama-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -82,6 +81,5 @@ in
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}
     luafile ${./vimrc/obsidian.lua}
-    luafile ${./vimrc/ollama.lua}
   '';
 }

@@ -35,6 +35,7 @@ in
       nvim-cmp
       cmp-nvim-lsp
       cmp-buffer
+      ollama-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -69,6 +70,7 @@ in
       # I might be switching between copilot and codeium depending on where I'm
       # coding and I don't want them conflicting
       copilot-vim
+
     ];
   };
   customRC = with builtins; ''
@@ -80,5 +82,6 @@ in
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}
     luafile ${./vimrc/obsidian.lua}
+    luafile ${./vimrc/ollama.lua}
   '';
 }

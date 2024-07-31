@@ -1,3 +1,4 @@
+local response_format = "Respond EXACTLY in this format:\n```$ftype\n<your code>\n```"
 require("ollama").setup({
   -- opts = {
     prompts = {
@@ -28,6 +29,22 @@ require("ollama").setup({
         ]],
         model = "llama3",
         action = "display",
+      },
+      Suggest_Tags = {
+        prompt = [[
+        Create 5 relevant single word tags for the bellow content. Use # before each of the tags.  Answer only the tags, do not add introductory words of explanations. For example: #aviation #nature #school-shootings
+
+        $sel
+        ]],
+        model = "mistral",
+        action = "display"
+      },
+      Simplify_Language = {
+        prompt = "Rewrite the text given to only use active voice and plain language. Aim for comprehension level 3.\n\n"
+        .. response_format
+        .. "\n\n```$ftype\n$sel\n```",
+        model = "llama3",
+        action = "display"
       }
     }
   -- }

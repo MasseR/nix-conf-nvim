@@ -6,6 +6,28 @@ require("ollama").setup({
         input_label = "> ",
         model = "mistral",
         action = "display",
+      },
+      Generate_Title = {
+        prompt = [[
+        Please generate a concise, informative title for the following text. The title should:
+        - Be short, preferably under 10 words
+        - Capture the main idea or key information from the text
+        - Be suitable for a simple Zettelkasten-style permanent note
+        - Avoid clickbait or sensationalism
+        - Use clear and straightforward language
+
+        Example Titles:
+        - Anthropic cookbook for Wikipedia
+        - Acid-state is an embedded database for Haskell
+        - Agent communicating with a backend
+        - Aroma and taste are strongly linked
+        - Clarify your tasks
+        - Consumer and producer are coupled
+
+        $sel
+        ]],
+        model = "llama3",
+        action = "display",
       }
     }
   -- }

@@ -61,6 +61,15 @@ require("obsidian").setup({
       end,
       opts = { buffer = true },
     },
+    -- Toggle check-boxes.
+    ["<leader>lf"] = {
+      action = "<cmd>ObsidianQuickSwitch<CR>",
+      opts = { buffer = true },
+      -- action = function()
+      --   return "<cmd>ObsidianQuickSwitch<CR>"
+      -- end,
+      -- opts = { buffer = true },
+    },
     -- Smart action depending on context, either follow link or toggle checkbox.
     ["<cr>"] = {
       action = function()

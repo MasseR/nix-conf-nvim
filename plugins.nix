@@ -1,7 +1,7 @@
 {pkgs, lib, fetchgit, dhallToNix, inputs}:
 
 let
-  buildvimPlugin = pkgs.vimUtils.buildVimPluginFrom2Nix;
+  buildvimPlugin = pkgs.vimUtils.buildVimPlugin;
   toPlugin = name: value:
     buildvimPlugin {
       pname = "${name}";

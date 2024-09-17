@@ -35,6 +35,7 @@ in
       nvim-cmp
       cmp-nvim-lsp
       cmp-buffer
+      lspkind-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -46,6 +47,7 @@ in
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-ledger
+      myPlugins.nvim-codeium
     ];
     opt = [
       # The codeium plugin is a bit iffy in the nixos world. It's fetching the
@@ -64,7 +66,8 @@ in
       # As a spoiler, to accept the suggestion, run: Ctrl-g
       #
       # The plugin is set to be optional, to enable it, run: :packadd vim-codeium
-      myPlugins.vim-codeium
+      # myPlugins.nvim-codeium
+      # codeium-nvim
 
       # I might be switching between copilot and codeium depending on where I'm
       # coding and I don't want them conflicting
@@ -72,7 +75,29 @@ in
 
     ];
   };
-  customRC = with builtins; ''
+  customRC = with builtins;
+  let
+    codeium-lsp = with pkgs; stdenv.mkDerivation rec {
+      pname = "codeium-lsp";
+      version = "v1.8.80";
+      src = fetchurl {
+        url = "https://github.com/Exafunction/codeium/releases/download/language-server-${version}/language_server_linux_x64";
+        sha256 = "sha256-0LZKNjDj2MXsGJRwkeuk9KEHRtU2Tgdccw1o0BTR5/M=";
+      };
+      nativeBuildInputs = [ autoPatchelfHook ];
+      phases = ["installPhase" "fixupPhase"];
+      installPhase = ''
+        mkdir -p $out/bin
+        cp $src $out/bin/codeium_language_server
+        chmod +x $out/bin/codeium_language_server
+      '';
+    };
+    nix-env = with pkgs; runCommand "nix-environment.lua" { codeium = codeium-lsp; }
+    ''
+      substituteAll ${./vimrc/nix-env.lua.in} $out
+    '';
+  in ''
+    luafile ${nix-env}
     ${readFile ./vimrc/generic.vim}
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/abbreviations.vim}

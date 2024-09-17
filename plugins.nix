@@ -21,7 +21,7 @@ let
     vim-ledger
     vim-haskell-indent
     syntastic
-    vim-codeium;
+    nvim-codeium;
   };
   plugins = with lib;
     listToAttrs (mapAttrsToList (name: value: { name = name; value = toPlugin name value; }) sources);

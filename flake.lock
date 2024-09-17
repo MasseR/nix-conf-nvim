@@ -50,14 +50,30 @@
         "type": "github"
       }
     },
+    "nvim-codeium": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725589489,
+        "narHash": "sha256-cgr0b1y+bUiteESWXiYPULrS1oDfeZ7aYwGZN5VIUoo=",
+        "owner": "Exafunction",
+        "repo": "codeium.nvim",
+        "rev": "937667b2cadc7905e6b9ba18ecf84694cf227567",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exafunction",
+        "repo": "codeium.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
         "nerdtree": "nerdtree",
         "nixpkgs": "nixpkgs",
+        "nvim-codeium": "nvim-codeium",
         "syntastic": "syntastic",
         "tcomment_vim": "tcomment_vim",
-        "vim-codeium": "vim-codeium",
         "vim-gnupg": "vim-gnupg",
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",
@@ -111,22 +127,6 @@
       "original": {
         "owner": "tomtom",
         "repo": "tcomment_vim",
-        "type": "github"
-      }
-    },
-    "vim-codeium": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1726171210,
-        "narHash": "sha256-f1ofT44Y3JeCLpaV5VoarU9MYoN1KzN9Xc9oxZehANo=",
-        "owner": "Exafunction",
-        "repo": "codeium.vim",
-        "rev": "fa65fa942aaf1aef73b6dbe3cc0faa713b738fbe",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Exafunction",
-        "repo": "codeium.vim",
         "type": "github"
       }
     },

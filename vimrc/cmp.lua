@@ -9,7 +9,16 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'buffer' }
-  })
+    { name = 'buffer' },
+    { name = 'codeium' }
+  }),
+  formatting = {
+    format = require('lspkind').cmp_format({
+      mode = "symbol",
+      maxwidth = 50,
+      ellipsis_char = '...',
+      symbol_map = { Codeium = "", }
+    })
+  }
 })
 

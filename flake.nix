@@ -48,8 +48,8 @@
       url = "github:gregorias/vim-ledger";
       flake = false;
     };
-    vim-codeium = {
-      url = "github:Exafunction/codeium.vim";
+    nvim-codeium = {
+      url = "github:Exafunction/codeium.nvim";
       flake = false;
     };
   };
@@ -60,8 +60,7 @@
     let neovim = final.callPackage ./neovim.nix { inherit inputs; };
     in {
       myVim = neovim.vimPkg;
-      myVimQt = neovim.qtvim;
-      haskellPackages = prev.haskellPackages.override ( old: {
+     haskellPackages = prev.haskellPackages.override ( old: {
         overrides = with prev.haskell.lib; final.lib.composeExtensions ( old.overrides or (_: _: {})) (f: p: {
           hasktagging = justStaticExecutables (f.callPackage ./hasktagging {});
           hasktags = justStaticExecutables prev.hasktags;

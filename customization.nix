@@ -47,7 +47,6 @@ in
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-ledger
-      myPlugins.nvim-codeium
     ];
     opt = [
       # The codeium plugin is a bit iffy in the nixos world. It's fetching the
@@ -71,6 +70,7 @@ in
 
       # I might be switching between copilot and codeium depending on where I'm
       # coding and I don't want them conflicting
+      myPlugins.nvim-codeium
       copilot-vim
 
     ];
@@ -106,5 +106,6 @@ in
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}
     luafile ${./vimrc/obsidian.lua}
+    luafile ${./vimrc/codeium.lua}
   '';
 }

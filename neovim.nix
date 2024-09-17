@@ -13,11 +13,8 @@ let
       packages.myVimPackage = customizations.plugins;
     };
   };
-  qtvim = neovim-qt.override {
-    neovim = vimPkg;
-  };
 
 in
 
-  { inherit vimPkg qtvim; }
+  { inherit vimPkg; }
 

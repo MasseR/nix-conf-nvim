@@ -292,11 +292,3 @@ require("obsidian").setup({
 })
 
 
-
--- Doesn't belong in this file, but for quick testing
-require("codeium").setup({
-  tools = {
-    -- From the nix-env.lua
-    language_server = paths.codeium
-  }
-})

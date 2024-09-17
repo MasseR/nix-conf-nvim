@@ -10,7 +10,8 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'buffer' },
-    { name = 'codeium' }
+    { name = 'codeium' },
+    { name = 'conjure' }
   }),
   formatting = {
     format = require('lspkind').cmp_format({

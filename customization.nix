@@ -36,6 +36,8 @@ in
       cmp-nvim-lsp
       cmp-buffer
       lspkind-nvim
+      conjure
+      cmp-conjure
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace

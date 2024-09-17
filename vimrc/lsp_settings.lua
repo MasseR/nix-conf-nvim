@@ -2,7 +2,7 @@ local lspconfig = require("lspconfig")
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   capabilities = capabilities
 }
 lspconfig.nil_ls.setup {

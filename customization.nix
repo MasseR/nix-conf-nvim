@@ -49,27 +49,23 @@ in
       myPlugins.vim-ledger
     ];
     opt = [
-      # The codeium plugin is a bit iffy in the nixos world. It's fetching the
-      # codeium plugin from github and installing it under
-      # ~/.codeium/bin/<hash>/ and has the wrong interpreter. Fixing the
-      # interpreter requires patchelfing, but doing it manually is obviously
-      # finicky, breaking whenever the libc is changed.
+      # I have both codeium (free) and copilot (work, money)
+      # By having them as optional plugins, I can enable one of them depending
+      # on where I'm running
       #
-      # To check whether the codeium server is successfully running, you can
-      # check the g:codeium_server_job variable
+      # The codeium results are IMO much better than the copilot ones, but it is also
+      # much more difficult to setup, requiring to patchelf a dynamically linked executable.
+      # Speaking of patchelfing, see the 'codeium-lsp' derivation below.
       #
-      # To fix the interpreter, run:
-      # patchelf --set-interpreter $(patchelf --print-interpreter $(readlink -f $(which patchelf))) language_server_linux_x64
+      # When the plugin is updated, it will most likely require a different version of the language server
       #
-      # For keybindings, see the mappings.vim file
-      # As a spoiler, to accept the suggestion, run: Ctrl-g
+      # Just update the version string and fix the sha256 and the plugin should work again.
       #
-      # The plugin is set to be optional, to enable it, run: :packadd vim-codeium
-      # myPlugins.nvim-codeium
-      # codeium-nvim
-
-      # I might be switching between copilot and codeium depending on where I'm
-      # coding and I don't want them conflicting
+      # This is much nicer than previously when I did the patchelf manually on the machine.
+      #
+      # There is a couple of definitions defined in the aicompl.lua file. They provide two user commands
+      # `:EnableCodeium` and `:EnableCopilot`. I used to just do `:packadd <package>`, but the codeium
+      # now requires some lua setup and you can't do it unless the package first exists.
       myPlugins.nvim-codeium
       copilot-vim
 

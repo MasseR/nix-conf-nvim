@@ -106,6 +106,6 @@ in
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}
     luafile ${./vimrc/obsidian.lua}
-    luafile ${./vimrc/codeium.lua}
+    luafile ${./vimrc/aicompl.lua}
   '';
 }

@@ -95,17 +95,17 @@ require("obsidian").setup({
     -- Create note IDs in a Zettelkasten format with a timestamp and a suffix.
     -- In this case a note with the title 'My new note' will be given an ID that looks
     -- like '1657296016-my-new-note', and therefore the file name '1657296016-my-new-note.md'
-    local suffix = ""
+    local name = ""
     if title ~= nil then
       -- If title is given, transform it into valid file name.
-      suffix = title:gsub("[^A-Za-z0-9- ]", "")
+      name = title:gsub("[^A-Za-z0-9- ]", "")
     else
-      -- If title is nil, just add 4 random uppercase letters to the suffix.
+      -- If title is nil, just add 4 random uppercase letters to the name.
       for _ = 1, 4 do
-        suffix = suffix .. string.char(math.random(65, 90))
+        name = tostring(os.time()) .. "-" .. name .. string.char(math.random(65, 90))
       end
     end
-    return tostring(os.time()) .. "-" .. suffix
+    return  name
   end,
 
   -- Optional, customize how note file names are generated given the ID, target directory, and title.

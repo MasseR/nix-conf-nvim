@@ -14,6 +14,10 @@ require("obsidian").setup({
       name = "work",
       path = "~/work_zettel/work",
     },
+    {
+      name = "Hero Kids",
+      path = "~/personal_ttrpg/Hero Kids",
+    },
   },
 
   -- Alternatively - and for backwards compatibility - you can set 'dir' to a single path instead of

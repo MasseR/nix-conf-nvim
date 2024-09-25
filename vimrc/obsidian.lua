@@ -63,8 +63,16 @@ require("obsidian").setup({
       description = "Show the obsidian backlinks",
       opts = { buffer = true },
     },
-    ["<leader>obt"] = {
+    ["<leader>obta"] = {
       action = "<cmd>ObsidianTags<CR>",
+      opts = { buffer = true },
+    },
+    ["<leader>obte"] = {
+      action = "<cmd>ObsidianTemplate<CR>",
+      opts = { buffer = true },
+    },
+    ["<leader>obre"] = {
+      action = "<cmd>ObsidianRename<CR>",
       opts = { buffer = true },
     },
     ["<leader>obs"] = {

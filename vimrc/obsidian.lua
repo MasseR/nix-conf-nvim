@@ -58,6 +58,23 @@ require("obsidian").setup({
       end,
       opts = { noremap = false, expr = true, buffer = true },
     },
+    ["<leader>obb"] = {
+      action = "<cmd>ObsidianBacklinks<CR>",
+      description = "Show the obsidian backlinks",
+      opts = { buffer = true },
+    },
+    ["<leader>obt"] = {
+      action = "<cmd>ObsidianTags<CR>",
+      opts = { buffer = true },
+    },
+    ["<leader>obs"] = {
+      action = "<cmd>ObsidianSearch<CR>",
+      opts = { buffer = true },
+    },
+    ["<leader>obn"] = {
+      action = "<cmd>ObsidianNew<CR>",
+      opts = { buffer = true },
+    },
     -- Toggle check-boxes.
     ["<leader>ch"] = {
       action = function()

@@ -18,6 +18,10 @@ require("obsidian").setup({
       name = "Hero Kids",
       path = "~/personal_ttrpg/Hero Kids",
     },
+    {
+      name = "Amazing tales",
+      path = "~/personal_ttrpg/Amazing tales",
+    },
   },
 
   -- Alternatively - and for backwards compatibility - you can set 'dir' to a single path instead of

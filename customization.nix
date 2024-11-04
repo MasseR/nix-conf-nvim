@@ -50,6 +50,7 @@ in
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-ledger
+      myPlugins.d2-vim
     ];
     opt = [
       # I have both codeium (free) and copilot (work, money)

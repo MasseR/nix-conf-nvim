@@ -21,6 +21,7 @@ let
     vim-ledger
     vim-haskell-indent
     syntastic
+    d2-vim
     nvim-codeium;
   };
   plugins = with lib;

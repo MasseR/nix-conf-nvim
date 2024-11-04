@@ -52,6 +52,10 @@
       url = "github:Exafunction/codeium.nvim";
       flake = false;
     };
+    d2-vim = {
+      url = "github:terrastruct/d2-vim";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, flake-utils, ... } @ inputs: {

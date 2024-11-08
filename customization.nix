@@ -102,6 +102,7 @@ in
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/abbreviations.vim}
     ${readFile ./vimrc/zettel_settings.vim}
+    ${readFile ./vimrc/ledger.vim}
     luafile ${./vimrc/lsp_settings.lua}
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}

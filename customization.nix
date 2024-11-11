@@ -39,6 +39,7 @@ in
       conjure
       cmp-conjure
       which-key-nvim
+      diagram-nvim
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -115,5 +116,6 @@ in
     luafile ${./vimrc/aicompl.lua}
     luafile ${./vimrc/which-key.lua}
     luafile ${./vimrc/treesitter.lua}
+    luafile ${./vimrc/image.lua}
   '';
 }

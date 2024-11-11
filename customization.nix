@@ -39,6 +39,11 @@ in
       conjure
       cmp-conjure
       which-key-nvim
+      nvim-treesitter
+      nvim-treesitter-parsers.arduino
+      nvim-treesitter-parsers.haskell
+      nvim-treesitter-parsers.nix
+      nvim-treesitter-parsers.clojure
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace
@@ -109,5 +114,6 @@ in
     luafile ${./vimrc/obsidian.lua}
     luafile ${./vimrc/aicompl.lua}
     luafile ${./vimrc/which-key.lua}
+    luafile ${./vimrc/treesitter.lua}
   '';
 }

@@ -10,7 +10,7 @@ in
     start = [
       elm-vim
       vimproc-vim
-      vimwiki
+      # vimwiki
       vim-gitgutter
       vim-airline
       vim-airline-themes
@@ -45,6 +45,7 @@ in
       nvim-treesitter-parsers.haskell
       nvim-treesitter-parsers.nix
       nvim-treesitter-parsers.clojure
+      nvim-treesitter-parsers.markdown
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace

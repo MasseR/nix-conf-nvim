@@ -23,6 +23,8 @@ set expandtab
 set ruler
 set wildmenu
 
+set conceallevel=2
+
 " Line wrapping
 " Enable wrapping and break on word boundaries
 set wrap linebreak

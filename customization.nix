@@ -19,6 +19,7 @@ in
       undotree
       vim-surround
       vim-markdown
+      bullets-vim
       vim-nix
       vim-fugitive
       vim-signature
@@ -116,6 +117,7 @@ in
     ${readFile ./vimrc/abbreviations.vim}
     ${readFile ./vimrc/zettel_settings.vim}
     ${readFile ./vimrc/ledger.vim}
+    ${readFile ./vimrc/markdown.vim}
     luafile ${./vimrc/lsp_settings.lua}
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}

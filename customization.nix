@@ -46,6 +46,10 @@ in
       nvim-treesitter-parsers.nix
       nvim-treesitter-parsers.clojure
       nvim-treesitter-parsers.markdown
+      nvim-treesitter-parsers.yaml
+      nvim-treesitter-parsers.dhall
+      nvim-treesitter-parsers.json
+      rainbow-delimiters-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-trailing-whitespace

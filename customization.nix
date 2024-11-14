@@ -19,6 +19,7 @@ in
       undotree
       vim-surround
       vim-markdown
+      Tabular
       bullets-vim
       vim-nix
       vim-fugitive

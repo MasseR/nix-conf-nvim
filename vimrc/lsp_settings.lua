@@ -56,6 +56,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
     vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
     vim.keymap.set('n', '<space>e', telescope_builtin.diagnostics, opts)
+    vim.keymap.set('n', '<space>E', vim.diagnostic.open_float, opts)
     vim.keymap.set('n', '[n', vim.diagnostic.goto_prev, opts)
     vim.keymap.set('n', ']n', vim.diagnostic.goto_next, opts)
     vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)

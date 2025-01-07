@@ -52,11 +52,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1734424634,
-        "narHash": "sha256-cHar1vqHOOyC7f1+tVycPoWTfKIaqkoe1Q6TnKzuti4=",
+        "lastModified": 1735834308,
+        "narHash": "sha256-dklw3AXr3OGO4/XT1Tu3Xz9n/we8GctZZ75ZWVqAVhk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d3c42f187194c26d9f0309a8ecc469d6c878ce33",
+        "rev": "6df24922a1400241dae323af55f30e4318a6ca65",
         "type": "github"
       },
       "original": {
@@ -69,11 +69,11 @@
     "nvim-codeium": {
       "flake": false,
       "locked": {
-        "lastModified": 1733165974,
-        "narHash": "sha256-ijRHGhvvfp7dfkb2/8iT5i2SsdZJzH/r1uh4GnoDz5Y=",
+        "lastModified": 1736062615,
+        "narHash": "sha256-Ic11SaaGd7TKbnOmCecj0olvUl0tjmTn9hJ+CfGLzlo=",
         "owner": "Exafunction",
         "repo": "codeium.nvim",
-        "rev": "27d2b1ce8c7ba14dbf6e4504bdea8e5548be5476",
+        "rev": "ebed4f7cc8a18184d8332d421ca10bed5f7d59a1",
         "type": "github"
       },
       "original": {

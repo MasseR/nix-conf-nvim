@@ -86,7 +86,8 @@ in
       # There is a couple of definitions defined in the aicompl.lua file. They provide two user commands
       # `:EnableCodeium` and `:EnableCopilot`. I used to just do `:packadd <package>`, but the codeium
       # now requires some lua setup and you can't do it unless the package first exists.
-      myPlugins.nvim-codeium
+      # myPlugins.nvim-codeium
+      codeium-nvim
       copilot-vim
 
     ];

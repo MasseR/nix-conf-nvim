@@ -130,5 +130,6 @@ in
     luafile ${./vimrc/treesitter.lua}
     luafile ${./vimrc/image.lua}
     luafile ${./vimrc/codecompanion.lua}
+    luafile ${./vimrc/diagram.lua}
   '';
 }

@@ -54,6 +54,7 @@ in
       nvim-treesitter-parsers.json
       nvim-treesitter-parsers.gitcommit
       nvim-treesitter-parsers.gitignore
+      nvim-treesitter-parsers.mermaid
       rainbow-delimiters-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins

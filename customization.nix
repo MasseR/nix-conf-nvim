@@ -43,6 +43,7 @@ in
       which-key-nvim
       diagram-nvim
       codecompanion-nvim
+      editorconfig-vim
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -58,7 +59,7 @@ in
       rainbow-delimiters-nvim
       # vim-ledger
       myPlugins.masser # Custom ftplugins
-      myPlugins.vim-trailing-whitespace
+      # myPlugins.vim-trailing-whitespace
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree
       myPlugins.syntastic

@@ -43,6 +43,7 @@ in
       tcomment_vim
       syntastic
       unimpaired-nvim
+      vim-ledger
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -63,7 +64,6 @@ in
       myPlugins.nerdtree
       myPlugins.vim-gnupg
       myPlugins.vim-gutentags
-      myPlugins.vim-ledger
       myPlugins.d2-vim
     ];
     opt = [

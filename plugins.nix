@@ -15,7 +15,6 @@ let
     vim-gnupg
     vim-gutentags
     vim-lsp
-    vim-ledger
     vim-haskell-indent
     d2-vim
     nvim-codeium;

@@ -92,7 +92,6 @@
         "vim-gnupg": "vim-gnupg",
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",
-        "vim-ledger": "vim-ledger",
         "xmledit": "xmledit"
       }
     },
@@ -156,22 +155,6 @@
       "original": {
         "owner": "itchyny",
         "repo": "vim-haskell-indent",
-        "type": "github"
-      }
-    },
-    "vim-ledger": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1618650148,
-        "narHash": "sha256-mewK4AO9Ucb3prxPXWLPwZ6Tg6uA0c+5JhLLidFHVEw=",
-        "owner": "gregorias",
-        "repo": "vim-ledger",
-        "rev": "241a879e46227c8eb5a75523c0333e6156ca6bc9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gregorias",
-        "repo": "vim-ledger",
         "type": "github"
       }
     },

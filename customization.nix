@@ -43,7 +43,6 @@ in
       which-key-nvim
       diagram-nvim
       codecompanion-nvim
-      editorconfig-vim
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell

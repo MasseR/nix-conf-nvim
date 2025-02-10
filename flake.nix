@@ -36,10 +36,6 @@
       url = "github:itchyny/vim-haskell-indent";
       flake = false;
     };
-    vim-trailing-whitespace = {
-      url = "github:bronson/vim-trailing-whitespace";
-      flake = false;
-    };
     vim-gnupg = {
       url = "github:jamessan/vim-gnupg";
       flake = false;

@@ -11,7 +11,6 @@ let
   };
   sources = {
     inherit (inputs)
-    vim-trailing-whitespace
     nerdtree
     vim-gnupg
     vim-unimpaired

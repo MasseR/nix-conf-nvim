@@ -15,7 +15,6 @@ in
       vim-airline
       vim-airline-themes
       zenburn
-      ctrlp-vim
       undotree
       vim-surround
       vim-markdown

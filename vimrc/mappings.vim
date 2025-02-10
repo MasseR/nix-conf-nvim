@@ -35,10 +35,7 @@ noremap ' `
 noremap ` '
 
 " CtrlP stuff
-noremap <Leader>lb :CtrlPBuffer<cr>
-" noremap <Leader>lf :CtrlP<cr>
-noremap <Leader>lt :CtrlPTag<cr>
-noremap <Leader>ll :CtrlPTag<cr>
+" noremap <Leader>lb :CtrlPBuffer<cr>
 
 
 " Misc

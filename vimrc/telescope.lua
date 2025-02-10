@@ -30,3 +30,6 @@ require("telescope").load_extension("ui-select")
 vim.keymap.set('n', '<Leader>lf', function()
     require'telescope.builtin'.find_files{}
 end, { noremap = true, silent = true })
+vim.keymap.set('n', '<Leader>lb', function()
+    require'telescope.builtin'.buffers{}
+end, { noremap = true, silent = true })

@@ -29,10 +29,12 @@ require("telescope").load_extension("ui-select")
 
 vim.keymap.set('n', '<Leader>lf', function()
     require'telescope.builtin'.find_files{}
-end, { noremap = true, silent = true })
+end, { noremap = true, silent = true, desc = "Find Files" })
+
 vim.keymap.set('n', '<Leader>lb', function()
     require'telescope.builtin'.buffers{}
-end, { noremap = true, silent = true })
+end, { noremap = true, silent = true, desc = "List Buffers" })
+
 vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
-end, { noremap = true, silent = true })
+end, { noremap = true, silent = true, desc = "Live Grep" })

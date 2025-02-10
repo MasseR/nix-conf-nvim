@@ -14,7 +14,6 @@ let
     nerdtree
     vim-gnupg
     vim-unimpaired
-    tcomment_vim
     vim-gutentags
     vim-lsp
     vim-ledger

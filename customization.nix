@@ -40,6 +40,7 @@ in
       which-key-nvim
       diagram-nvim
       codecompanion-nvim
+      tcomment_vim
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -60,7 +61,6 @@ in
       myPlugins.nerdtree
       myPlugins.syntastic
       myPlugins.vim-gnupg
-      myPlugins.tcomment_vim
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags
       myPlugins.vim-ledger

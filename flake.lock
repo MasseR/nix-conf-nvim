@@ -90,7 +90,6 @@
         "nixpkgs": "nixpkgs",
         "nvim-codeium": "nvim-codeium",
         "syntastic": "syntastic",
-        "tcomment_vim": "tcomment_vim",
         "vim-gnupg": "vim-gnupg",
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",
@@ -127,22 +126,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "tcomment_vim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1711363004,
-        "narHash": "sha256-D8B16ejQ2csahOa49RCENCA1wRY5N0RGFnqxPjbhNR4=",
-        "owner": "tomtom",
-        "repo": "tcomment_vim",
-        "rev": "48ab639a461d9b8344f7fee06cb69b4374863b13",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tomtom",
-        "repo": "tcomment_vim",
         "type": "github"
       }
     },

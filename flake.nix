@@ -16,10 +16,6 @@
       flake = false;
     };
 
-    tcomment_vim = {
-      url = "github:tomtom/tcomment_vim";
-      flake = false;
-    };
     syntastic = {
       url = "github:scrooloose/syntastic";
       flake = false;

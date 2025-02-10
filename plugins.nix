@@ -13,7 +13,6 @@ let
     inherit (inputs)
     nerdtree
     vim-gnupg
-    vim-unimpaired
     vim-gutentags
     vim-lsp
     vim-ledger

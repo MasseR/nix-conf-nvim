@@ -11,10 +11,6 @@
       url = "github:ludovicchabant/vim-gutentags";
       flake = false;
     };
-    vim-unimpaired = {
-      url = "github:tpope/vim-unimpaired";
-      flake = false;
-    };
 
     xmledit = {
       url = "github:sukima/xmledit";

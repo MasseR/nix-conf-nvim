@@ -55,6 +55,7 @@ in
       nvim-treesitter-parsers.gitignore
       nvim-treesitter-parsers.mermaid
       rainbow-delimiters-nvim
+      nvim-treesitter-textobjects
       # vim-ledger
       myPlugins.masser # Custom ftplugins
       # myPlugins.vim-trailing-whitespace

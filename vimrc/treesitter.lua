@@ -19,4 +19,19 @@ require'nvim-treesitter.configs'.setup {
       node_decremental = "grm",
     },
   },
+  textobjects = {
+    select = {
+      enable = true,
+
+      lookahead = true,
+
+      keymaps = {
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        -- Can have description for which-key
+        ["ic"] = { query = "@class.inner", desc = "Select inner part of class region" },
+      },
+    }
+  }
 }

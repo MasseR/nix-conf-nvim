@@ -42,6 +42,8 @@ in
       which-key-nvim
       diagram-nvim
       codecompanion-nvim
+      neorg
+      neorg-telescope
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -131,5 +133,6 @@ in
     luafile ${./vimrc/image.lua}
     luafile ${./vimrc/codecompanion.lua}
     luafile ${./vimrc/diagram.lua}
+    luafile ${./vimrc/neorg.lua}
   '';
 }

@@ -89,29 +89,12 @@
         "nerdtree": "nerdtree",
         "nixpkgs": "nixpkgs",
         "nvim-codeium": "nvim-codeium",
-        "syntastic": "syntastic",
         "vim-gnupg": "vim-gnupg",
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",
         "vim-ledger": "vim-ledger",
         "vim-unimpaired": "vim-unimpaired",
         "xmledit": "xmledit"
-      }
-    },
-    "syntastic": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1657457925,
-        "narHash": "sha256-oFhR0R+94zB/xgw42vP+GMRIf6GcckRm5sSp4/9XTXw=",
-        "owner": "scrooloose",
-        "repo": "syntastic",
-        "rev": "8d5e37c29cf5952fbf300b9230bffe424c61a488",
-        "type": "github"
-      },
-      "original": {
-        "owner": "scrooloose",
-        "repo": "syntastic",
-        "type": "github"
       }
     },
     "systems": {

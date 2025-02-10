@@ -41,6 +41,7 @@ in
       diagram-nvim
       codecompanion-nvim
       tcomment_vim
+      syntastic
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -59,7 +60,6 @@ in
       myPlugins.masser # Custom ftplugins
       myPlugins.vim-haskell-indent
       myPlugins.nerdtree
-      myPlugins.syntastic
       myPlugins.vim-gnupg
       myPlugins.vim-unimpaired
       myPlugins.vim-gutentags

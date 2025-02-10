@@ -16,10 +16,6 @@
       flake = false;
     };
 
-    syntastic = {
-      url = "github:scrooloose/syntastic";
-      flake = false;
-    };
     xmledit = {
       url = "github:sukima/xmledit";
       flake = false;

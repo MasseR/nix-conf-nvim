@@ -25,6 +25,7 @@ require("telescope").setup {
 -- To get ui-select loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require("telescope").load_extension("ui-select")
+require("telescope").load_extension("zk")
 
 
 vim.keymap.set('n', '<Leader>lf', function()
@@ -38,6 +39,14 @@ end, { noremap = true, silent = true, desc = "List Buffers" })
 vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
 end, { noremap = true, silent = true, desc = "Live Grep" })
+
+vim.keymap.set('n', '<Leader>zf', function()
+    require'telescope'.extensions.zk.notes{}
+end, { noremap = true, silent = true, desc = "ZK notes" })
+
+vim.keymap.set('n', '<Leader>zt', function()
+    require'telescope'.extensions.zk.tags{}
+end, { noremap = true, silent = true, desc = "ZK tags" })
 
 vim.keymap.set('n', '<F1>', function()
     require'telescope.builtin'.help_tags{}

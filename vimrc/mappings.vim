@@ -38,10 +38,6 @@ noremap ` '
 " Misc
 noremap <F2> :UndotreeToggle<cr>
 
-" Fold helper
-" Close all except current line
-noremap <leader>z zMzv
-
 
 " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
 autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms

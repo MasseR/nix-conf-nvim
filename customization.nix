@@ -43,6 +43,7 @@ in
       syntastic
       unimpaired-nvim
       vim-ledger
+      zk-nvim
       nvim-treesitter
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
@@ -129,5 +130,6 @@ in
     luafile ${./vimrc/diagram.lua}
     luafile ${./vimrc/surround.lua}
     luafile ${./vimrc/lualine.lua}
+    luafile ${./vimrc/zk.lua}
   '';
 }

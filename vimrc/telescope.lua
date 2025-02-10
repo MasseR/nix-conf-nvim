@@ -38,3 +38,12 @@ end, { noremap = true, silent = true, desc = "List Buffers" })
 vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
 end, { noremap = true, silent = true, desc = "Live Grep" })
+
+-- Note, that I tried the treesitter objects as well, but it's buggy on most of
+-- the files I use. Well, probably not telescope itself, but the treesitter
+-- that provides the items
+-- Tested in haskell, nix and lua (this file).
+--
+-- - Lua didn't provide anything
+-- - Nix worked best, but the values were somewhat useless
+-- - Haskell reported an error, similar to https://github.com/nvim-telescope/telescope.nvim/issues/3163

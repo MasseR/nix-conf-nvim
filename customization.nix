@@ -23,7 +23,6 @@ in
       vim-signature
       dhall-vim
       purescript-vim
-      # xptemplate
       todo-txt-vim
       direnv-vim
       nvim-lspconfig

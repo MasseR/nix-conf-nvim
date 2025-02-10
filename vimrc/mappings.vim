@@ -42,13 +42,6 @@ noremap <F2> :UndotreeToggle<cr>
 " Close all except current line
 noremap <leader>z zMzv
 
-" Start template
-if !has("gui_running")
-  " Terminal doesn't send the correct sequence
-  inoremap <C-@> <C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
-else
-  inoremap <C-Space> <C-R>=XPTemplateStart(0,{'k':'<C-\++'})<CR>
-endif
 
 " Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
 autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms

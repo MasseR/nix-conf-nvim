@@ -16,7 +16,7 @@ in
       vim-airline-themes
       zenburn
       undotree
-      vim-surround
+      nvim-surround
       vim-markdown
       Tabular
       bullets-vim
@@ -131,5 +131,6 @@ in
     luafile ${./vimrc/image.lua}
     luafile ${./vimrc/codecompanion.lua}
     luafile ${./vimrc/diagram.lua}
+    luafile ${./vimrc/surround.lua}
   '';
 }

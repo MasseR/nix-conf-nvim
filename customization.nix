@@ -11,9 +11,8 @@ in
       vimproc-vim
       # vimwiki
       vim-gitgutter
-      vim-airline
-      vim-airline-themes
       zenburn
+      lualine-nvim
       undotree
       nvim-surround
       vim-markdown
@@ -130,5 +129,6 @@ in
     luafile ${./vimrc/codecompanion.lua}
     luafile ${./vimrc/diagram.lua}
     luafile ${./vimrc/surround.lua}
+    luafile ${./vimrc/lualine.lua}
   '';
 }

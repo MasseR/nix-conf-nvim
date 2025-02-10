@@ -27,15 +27,12 @@ noremap <leader>gs :Git<cr>
 noremap <leader>ft :NERDTreeToggle<cr>
 
 " Buffer helpers, prefix b
-noremap <Leader>bl :CtrlPBuffer<cr>
 noremap <Leader>bd :bd<cr>
 noremap <leader>bu :GundoToggle<cr>
 
 noremap ' `
 noremap ` '
 
-" CtrlP stuff
-" noremap <Leader>lb :CtrlPBuffer<cr>
 
 
 " Misc

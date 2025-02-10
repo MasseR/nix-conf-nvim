@@ -118,7 +118,6 @@ in
     ${readFile ./vimrc/generic.vim}
     ${readFile ./vimrc/mappings.vim}
     ${readFile ./vimrc/abbreviations.vim}
-    ${readFile ./vimrc/zettel_settings.vim}
     ${readFile ./vimrc/ledger.vim}
     ${readFile ./vimrc/markdown.vim}
     luafile ${./vimrc/lsp_settings.lua}

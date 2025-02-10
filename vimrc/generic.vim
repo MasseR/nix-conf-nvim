@@ -37,14 +37,11 @@ set undofile
 silent !mkdir ~/.vim-undos > /dev/null 2>&1
 set undodir=$HOME/.vim-undos/
 
-let g:ctrlp_cmd = "CtrlPBufTag"
-
 set ignorecase
 set smartcase
 
 set autoread
 
-let g:ctrlp_root_markers = ['pom.xml', '.projectile', '.git', '*.cabal', 'package.yaml']
 " Git ignore
 set wildignore+=*/.git/*,*.orig,*_LOCAL_*,*_REMOTE_*,*_BACKUP_*,*_BASE_*
 " Haskell ignore

@@ -91,7 +91,6 @@ let g:vimwiki_folding = 'expr'
 
 autocmd CursorHold *.* checktime
 
-let g:elm_format_autosave = 0
 
 " Vim swap
 silent !mkdir -p ~/.vim/swap > /dev/null 2>&1

@@ -8,7 +8,6 @@ in
 {
   plugins = with pkgs.vimPlugins; {
     start = [
-      elm-vim
       vimproc-vim
       # vimwiki
       vim-gitgutter

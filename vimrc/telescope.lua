@@ -39,6 +39,10 @@ vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
 end, { noremap = true, silent = true, desc = "Live Grep" })
 
+vim.keymap.set('n', '<F1>', function()
+    require'telescope.builtin'.help_tags{}
+end, { noremap = true, silent = true, desc = "Help" })
+
 -- Note, that I tried the treesitter objects as well, but it's buggy on most of
 -- the files I use. Well, probably not telescope itself, but the treesitter
 -- that provides the items

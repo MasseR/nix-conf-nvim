@@ -39,8 +39,6 @@ noremap ` '
 noremap <F2> :UndotreeToggle<cr>
 
 
-" Stylish haskell formatprg. Stylish-haskell prog is provided by nix vim derivation
-autocmd BufEnter *.hs :noremap <buffer> <leader>ff ms:%!stylish-haskell<cr>`sms
 
 
 " For codeium

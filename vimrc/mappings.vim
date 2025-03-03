@@ -41,17 +41,6 @@ noremap <F2> :UndotreeToggle<cr>
 
 
 
-" For codeium
-function EnableAIMapping()
-  if exists('g:codeium_server_job')
-    imap <buffer><script><silent><nowait><expr> <Tab> codeium#Accept()
-    " Not sure these work :think:
-    imap <buffer> <C-)>   <Cmd>call codeium#CycleCompletions(1)<CR>
-    imap <buffer> <C-(>   <Cmd>call codeium#CycleCompletions(-1)<CR>
-    " The Ctrl-x conflicted with omnicompletion
-    " imap <C-x>   <Cmd>call codeium#Clear()<CR>
-  endif
-endfunction
 
 autocmd BufEnter *.hs call EnableAIMapping()
 autocmd BufEnter *.ts call EnableAIMapping()

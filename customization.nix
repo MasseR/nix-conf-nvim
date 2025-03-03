@@ -67,47 +67,15 @@ in
       myPlugins.d2-vim
     ];
     opt = [
-      # I have both codeium (free) and copilot (work, money)
-      # By having them as optional plugins, I can enable one of them depending
-      # on where I'm running
-      #
-      # The codeium results are IMO much better than the copilot ones, but it is also
-      # much more difficult to setup, requiring to patchelf a dynamically linked executable.
-      # Speaking of patchelfing, see the 'codeium-lsp' derivation below.
-      #
-      # When the plugin is updated, it will most likely require a different version of the language server
-      #
-      # Just update the version string and fix the sha256 and the plugin should work again.
-      #
-      # This is much nicer than previously when I did the patchelf manually on the machine.
-      #
-      # There is a couple of definitions defined in the aicompl.lua file. They provide two user commands
-      # `:EnableCodeium` and `:EnableCopilot`. I used to just do `:packadd <package>`, but the codeium
-      # now requires some lua setup and you can't do it unless the package first exists.
-      # myPlugins.nvim-codeium
-      codeium-nvim
+      # There is a couple of definitions defined in the aicompl.lua file. They provide the user command
+      # `:EnableCopilot`.
       copilot-vim
 
     ];
   };
   customRC = with builtins;
   let
-    codeium-lsp = with pkgs; stdenv.mkDerivation rec {
-      pname = "codeium-lsp";
-      version = "v1.8.80";
-      src = fetchurl {
-        url = "https://github.com/Exafunction/codeium/releases/download/language-server-${version}/language_server_linux_x64";
-        sha256 = "sha256-0LZKNjDj2MXsGJRwkeuk9KEHRtU2Tgdccw1o0BTR5/M=";
-      };
-      nativeBuildInputs = [ autoPatchelfHook ];
-      phases = ["installPhase" "fixupPhase"];
-      installPhase = ''
-        mkdir -p $out/bin
-        cp $src $out/bin/codeium_language_server
-        chmod +x $out/bin/codeium_language_server
-      '';
-    };
-    nix-env = with pkgs; runCommand "nix-environment.lua" { codeium = codeium-lsp; }
+    nix-env = with pkgs; runCommand "nix-environment.lua" {}
     ''
       substituteAll ${./vimrc/nix-env.lua.in} $out
     '';

@@ -16,8 +16,7 @@ let
     vim-gutentags
     vim-lsp
     vim-haskell-indent
-    d2-vim
-    nvim-codeium;
+    d2-vim;
   };
   plugins = with lib;
     listToAttrs (mapAttrsToList (name: value: { name = name; value = toPlugin name value; }) sources);

@@ -28,10 +28,6 @@
       url = "github:jamessan/vim-gnupg";
       flake = false;
     };
-    nvim-codeium = {
-      url = "github:Exafunction/codeium.nvim";
-      flake = false;
-    };
     d2-vim = {
       url = "github:terrastruct/d2-vim";
       flake = false;

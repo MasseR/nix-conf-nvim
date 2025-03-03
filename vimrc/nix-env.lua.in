@@ -1,3 +1,2 @@
 paths = {
-  codeium = "@codeium@/bin/codeium_language_server"
 }

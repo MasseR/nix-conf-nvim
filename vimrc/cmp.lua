@@ -10,7 +10,6 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'buffer' },
-    { name = 'codeium' },
     { name = 'conjure' }
   }),
   formatting = {
@@ -18,7 +17,6 @@ cmp.setup({
       mode = "symbol",
       maxwidth = 50,
       ellipsis_char = '...',
-      symbol_map = { Codeium = "", }
     })
   }
 })

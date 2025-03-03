@@ -66,29 +66,12 @@
         "type": "github"
       }
     },
-    "nvim-codeium": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1736062615,
-        "narHash": "sha256-Ic11SaaGd7TKbnOmCecj0olvUl0tjmTn9hJ+CfGLzlo=",
-        "owner": "Exafunction",
-        "repo": "codeium.nvim",
-        "rev": "ebed4f7cc8a18184d8332d421ca10bed5f7d59a1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Exafunction",
-        "repo": "codeium.nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "d2-vim": "d2-vim",
         "flake-utils": "flake-utils",
         "nerdtree": "nerdtree",
         "nixpkgs": "nixpkgs",
-        "nvim-codeium": "nvim-codeium",
         "vim-gnupg": "vim-gnupg",
         "vim-gutentags": "vim-gutentags",
         "vim-haskell-indent": "vim-haskell-indent",

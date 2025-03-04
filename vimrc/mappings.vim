@@ -42,7 +42,3 @@ noremap <F2> :UndotreeToggle<cr>
 
 
 
-autocmd BufEnter *.hs call EnableAIMapping()
-autocmd BufEnter *.ts call EnableAIMapping()
-autocmd BufEnter *.js call EnableAIMapping()
-autocmd BufEnter *.kotlin call EnableAIMapping()

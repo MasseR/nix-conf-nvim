@@ -36,6 +36,10 @@ vim.keymap.set('n', '<Leader>lb', function()
     require'telescope.builtin'.buffers{}
 end, { noremap = true, silent = true, desc = "List Buffers" })
 
+vim.keymap.set('n', '<Leader>lm', function()
+    require'telescope.builtin'.marks{}
+end, { noremap = true, silent = true, desc = "List Buffers" })
+
 vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
 end, { noremap = true, silent = true, desc = "Live Grep" })

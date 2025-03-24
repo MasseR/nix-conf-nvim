@@ -56,6 +56,7 @@ in
       nvim-treesitter-parsers.gitcommit
       nvim-treesitter-parsers.gitignore
       nvim-treesitter-parsers.mermaid
+      nvim-treesitter-parsers.elixir
       rainbow-delimiters-nvim
       nvim-treesitter-textobjects
       # vim-ledger

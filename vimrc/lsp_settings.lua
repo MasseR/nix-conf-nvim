@@ -23,6 +23,10 @@ lspconfig.clojure_lsp.setup {
 lspconfig.ocamllsp.setup {
   capabilities = capabilities
 }
+lspconfig.elixirls.setup {
+  cmd = { "elixir-ls" };
+  capabilities = capabilities;
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

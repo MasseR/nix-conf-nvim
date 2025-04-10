@@ -27,6 +27,9 @@ lspconfig.elixirls.setup {
   cmd = { "elixir-ls" };
   capabilities = capabilities;
 }
+lspconfig.bashls.setup {
+  capabilities = capabilities
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

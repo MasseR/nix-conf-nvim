@@ -30,6 +30,9 @@ lspconfig.elixirls.setup {
 lspconfig.bashls.setup {
   capabilities = capabilities
 }
+lspconfig.rust_analyzer.setup {
+  capabilities = capabilities
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

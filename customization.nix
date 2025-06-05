@@ -72,12 +72,13 @@ in
       # There is a couple of definitions defined in the aicompl.lua file. They provide the user command
       # `:EnableCopilot`.
       copilot-vim
+      windsurf-nvim
 
     ];
   };
   customRC = with builtins;
   let
-    nix-env = with pkgs; runCommand "nix-environment.lua" {}
+    nix-env = with pkgs; runCommand "nix-environment.lua" { codeium = codeium; }
     ''
       substituteAll ${./vimrc/nix-env.lua.in} $out
     '';

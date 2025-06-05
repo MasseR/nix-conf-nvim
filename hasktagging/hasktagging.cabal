@@ -21,7 +21,7 @@ executable hasktagging
   main-is:             Main.hs
   -- other-modules:
   -- other-extensions:
-  build-depends:       base >=4.12 && <4.19
+  build-depends:       base >=4.12 && <4.20
                      , optparse-applicative
                      , process
                      , directory

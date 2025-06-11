@@ -48,6 +48,7 @@ in
       nvim-treesitter-parsers.arduino
       nvim-treesitter-parsers.haskell
       nvim-treesitter-parsers.nix
+      nvim-treesitter-parsers.typescript
       nvim-treesitter-parsers.clojure
       nvim-treesitter-parsers.markdown
       nvim-treesitter-parsers.yaml

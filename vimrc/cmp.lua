@@ -8,10 +8,10 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
   sources = cmp.config.sources({
+    { name = 'codeium' },
     { name = 'nvim_lsp' },
     { name = 'buffer' },
     { name = 'conjure' },
-    { name = 'codeium' },
   }),
   formatting = {
     format = require('lspkind').cmp_format({

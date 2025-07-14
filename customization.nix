@@ -29,7 +29,7 @@ in
       telescope-nvim
       telescope-ui-select-nvim
       kotlin-vim
-      obsidian-nvim
+      # obsidian-nvim
       nvim-cmp
       cmp-nvim-lsp
       cmp-buffer
@@ -93,7 +93,7 @@ in
     luafile ${./vimrc/lsp_settings.lua}
     luafile ${./vimrc/telescope.lua}
     luafile ${./vimrc/cmp.lua}
-    luafile ${./vimrc/obsidian.lua}
+    " luafile ${./vimrc/obsidian.lua}
     luafile ${./vimrc/aicompl.lua}
     luafile ${./vimrc/which-key.lua}
     luafile ${./vimrc/treesitter.lua}

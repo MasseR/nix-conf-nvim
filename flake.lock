@@ -3,11 +3,11 @@
     "d2-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1752939360,
-        "narHash": "sha256-r1pR2t7adOxKqqNJuO0XoDNULMrWLmKyBhLKil/Q+jo=",
+        "lastModified": 1675176182,
+        "narHash": "sha256-+mT4pEbtq7f9ZXhOop3Jnjr7ulxU32VtahffIwQqYF4=",
         "owner": "terrastruct",
         "repo": "d2-vim",
-        "rev": "20429e823780dbb9e2807c28b0f7656fd257c893",
+        "rev": "981c87dccb63df2887cc41b96e84bf550f736c57",
         "type": "github"
       },
       "original": {
@@ -52,11 +52,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1752950548,
-        "narHash": "sha256-NS6BLD0lxOrnCiEOcvQCDVPXafX1/ek1dfJHX1nUIzc=",
+        "lastModified": 1748929857,
+        "narHash": "sha256-lcZQ8RhsmhsK8u7LIFsJhsLh/pzR9yZ8yqpTzyGdj+Q=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c87b95e25065c028d31a94f06a62927d18763fdf",
+        "rev": "c2a03962b8e24e669fb37b7df10e7c79531ff1a4",
         "type": "github"
       },
       "original": {

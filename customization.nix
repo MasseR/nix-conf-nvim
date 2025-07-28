@@ -39,7 +39,6 @@ in
       which-key-nvim
       diagram-nvim
       codecompanion-nvim
-      vectorcode-nvim
       tcomment_vim
       syntastic
       unimpaired-nvim

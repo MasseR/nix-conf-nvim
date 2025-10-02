@@ -1,4 +1,16 @@
-require("codecompanion").setup()
+require("codecompanion").setup({
+  adapters = {
+    acp = {
+      claude_code = function()
+        return require("codecompanion.adapters").extend("claude_code", {
+          env = {
+            ANTHROPIC_API_KEY = "cmd:pass show claude/api",
+          },
+        })
+      end,
+    },
+  },
+})
 
 
 vim.api.nvim_set_keymap("n", "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })

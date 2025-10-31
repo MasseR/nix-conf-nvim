@@ -1,29 +1,28 @@
-local lspconfig = require("lspconfig")
-
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = {
-  "bashls",
-  "clojure_lsp",
-  "dhall_lsp_server",
-  "elixirls",
-  "hls",
-  "kotlin_language_server",
-  "nil_ls",
-  "ocamllsp",
-  "rust_analyzer",
-  "ts_ls",
-}
+vim.lsp.config('bashls', { capabilities = capabilities })
+vim.lsp.config('clojure_lsp', { capabilities = capabilities })
+vim.lsp.config('dhall_lsp_server', { capabilities = capabilities })
+vim.lsp.config('elixirls', { capabilities = capabilities, cmd = { "elixir-ls" } })
+vim.lsp.config('hls', { capabilities = capabilities })
+vim.lsp.config('kotlin_language_server', { capabilities = capabilities })
+vim.lsp.config('nil_ls', { capabilities = capabilities })
+vim.lsp.config('ocamllsp', { capabilities = capabilities })
+vim.lsp.config('rust_analyzer', { capabilities = capabilities })
+vim.lsp.config('ts_ls', { capabilities = capabilities })
 
-for _, server in ipairs(servers) do
-  local opts = {
-    capabilities = capabilities,
-  }
-  if server == "elixirls" then
-    opts.cmd = { "elixir-ls" }
-  end
-  lspconfig[server].setup(opts)
-end
+vim.lsp.enable({
+  'bashls',
+  'clojure_lsp',
+  'dhall_lsp_server',
+  'elixirls',
+  'hls',
+  'kotlin_language_server',
+  'nil_ls',
+  'ocamllsp',
+  'rust_analyzer',
+  'ts_ls',
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

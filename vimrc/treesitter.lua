@@ -1,55 +1,73 @@
-require'nvim-treesitter.configs'.setup {
-  indent = {
-    enable = true
+local treesitter = require('nvim-treesitter')
+treesitter.setup()
+-- treesitter.install {'nix', 'haskell'}
+vim.api.nvim_create_autocmd('FileType', {
+  pattern =
+  { 'arduino',
+    'haskell',
+    'nix',
+    'typescript',
+    'clojure',
+    'markdown',
+    'yaml',
+    'dhall',
+    'json',
+    'gitcommit',
+    'gitignore',
+    'mermaid',
+    'elixir',
+    'rust'
   },
-  highlight = {
-    enable = true,
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn", -- set to `false` to disable one of the mappings
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
-    },
-  },
-  textobjects = {
+  callback = function()
+    vim.treesitter.start()
+    vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+    vim.wo[0][0].foldmethod = 'expr'
+    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+  end,
+})
+
+local textobjects = require('nvim-treesitter-textobjects')
+textobjects.setup{
     select = {
       enable = true,
 
       lookahead = true,
-
-      keymaps = {
-        ["af"] = "@function.outer",
-        ["if"] = "@function.inner",
-        ["ac"] = "@class.outer",
-        -- Can have description for which-key
-        ["ic"] = { query = "@class.inner", desc = "Select inner part of class region" },
-
-
-        ["aa"] = { query = "@node.outer", desc = "Select around a generic node" },
-        ["ia"] = { query = "@node.inner", desc = "Select inside a generic node" },
-
-
-        -- You might also find these useful for more granular control:
-        -- Around blocks (like if/for/while bodies)
-        ["ab"] = { query = "@block.outer", desc = "Select around a block" },
-        ["ib"] = { query = "@block.inner", desc = "Select inside a block" },
-
-        -- Around parameters/arguments (e.g., in function calls or definitions)
-        ["ap"] = { query = "@parameter.outer", desc = "Select around a parameter" },
-        ["ip"] = { query = "@parameter.inner", desc = "Select inside a parameter" },
-
-        -- Around comments
-        ["am"] = { query = "@comment.outer", desc = "Select around a comment" },
-        ["im"] = { query = "@comment.inner", desc = "Select inside a comment" },
-      },
     }
-  }
 }
+
+vim.keymap.set({"x", "o"}, "af", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@function.outer", "textobjects")
+end, { desc = "Select around a function" })
+vim.keymap.set({"x", "o"}, "if", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@function.inner", "textobjects")
+end, { desc = "Select inside a function" })
+vim.keymap.set({"x", "o"}, "ac", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@class.outer", "textobjects")
+end, { desc = "Select around a class" })
+vim.keymap.set({"x", "o"}, "ic", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@class.inner", "textobjects")
+end, { desc = "Select inner part of class region" })
+vim.keymap.set({"x", "o"}, "aa", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@node.outer", "textobjects")
+end, { desc = "Select around a generic node" })
+vim.keymap.set({"x", "o"}, "ia", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@node.inner", "textobjects")
+end, { desc = "Select inside a generic node" })
+vim.keymap.set({"x", "o"}, "ab", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@block.outer", "textobjects")
+end, { desc = "Select around a block" })
+vim.keymap.set({"x", "o"}, "ib", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@block.inner", "textobjects")
+end, { desc = "Select inside a block" })
+vim.keymap.set({"x", "o"}, "ap", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@parameter.outer", "textobjects")
+end, { desc = "Select around a parameter" })
+vim.keymap.set({"x", "o"}, "ip", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@parameter.inner", "textobjects")
+end, { desc = "Select inside a parameter" })
+vim.keymap.set({"x", "o"}, "am", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@comment.outer", "textobjects")
+end, { desc = "Select around a comment" })
+vim.keymap.set({"x", "o"}, "im", function()
+  require "nvim-treesitter-textobjects.select".select_textobject("@comment.inner", "textobjects")
+end, { desc = "Select inside a comment" })

@@ -29,7 +29,6 @@ in
       telescope-nvim
       telescope-ui-select-nvim
       kotlin-vim
-      # obsidian-nvim
       nvim-cmp
       cmp-nvim-lsp
       cmp-buffer
@@ -38,7 +37,6 @@ in
       cmp-conjure
       which-key-nvim
       diagram-nvim
-      codecompanion-nvim
       tcomment_vim
       syntastic
       unimpaired-nvim
@@ -98,7 +96,6 @@ in
     luafile ${./vimrc/which-key.lua}
     luafile ${./vimrc/treesitter.lua}
     luafile ${./vimrc/image.lua}
-    luafile ${./vimrc/codecompanion.lua}
     luafile ${./vimrc/diagram.lua}
     luafile ${./vimrc/surround.lua}
     luafile ${./vimrc/lualine.lua}

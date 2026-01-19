@@ -43,20 +43,7 @@ in
       vim-ledger
       zk-nvim
       nvim-treesitter
-      nvim-treesitter-parsers.arduino
-      nvim-treesitter-parsers.haskell
-      nvim-treesitter-parsers.nix
-      nvim-treesitter-parsers.typescript
-      nvim-treesitter-parsers.clojure
-      nvim-treesitter-parsers.markdown
-      nvim-treesitter-parsers.yaml
-      nvim-treesitter-parsers.dhall
-      nvim-treesitter-parsers.json
-      nvim-treesitter-parsers.gitcommit
-      nvim-treesitter-parsers.gitignore
-      nvim-treesitter-parsers.mermaid
-      nvim-treesitter-parsers.elixir
-      nvim-treesitter-parsers.rust
+      nvim-treesitter.withAllGrammars
       rainbow-delimiters-nvim
       nvim-treesitter-textobjects
       # vim-ledger

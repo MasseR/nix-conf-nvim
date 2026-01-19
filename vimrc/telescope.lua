@@ -38,7 +38,11 @@ end, { noremap = true, silent = true, desc = "List Buffers" })
 
 vim.keymap.set('n', '<Leader>lm', function()
     require'telescope.builtin'.marks{}
-end, { noremap = true, silent = true, desc = "List Buffers" })
+end, { noremap = true, silent = true, desc = "List Marks" })
+
+vim.keymap.set('n', '<Leader>ls', function()
+    require'telescope.builtin'.lsp_document_symbols{}
+end, { noremap = true, silent = true, desc = "List Symbols" })
 
 vim.keymap.set('n', '<Leader>ff', function()
     require'telescope.builtin'.live_grep{}
